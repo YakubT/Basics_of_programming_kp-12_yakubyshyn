@@ -33,7 +33,11 @@
                 <ImageBrush ImageSource="/div.png" Stretch="Fill"/>
             </Button.Background>
         </Button>
-        <Button x:Name="mul"  HorizontalAlignment="Left" Margin="279,240,0,0" VerticalAlignment="Top" Height="51" Width="83" Click="mul_Click" Content="x" FontSize="20" Background="#FFF4F4F4">
+        <Button x:Name="mul"  HorizontalAlignment="Left" Margin="279,240,0,0" VerticalAlignment="Top" Height="51" Width="83" Click="mul_Click" Content="x" FontSize="16" Background="#FFF4F4F4">
         </Button>
+        <Button x:Name="minus"  HorizontalAlignment="Left" Margin="279,291,0,0" VerticalAlignment="Top" Height="51" Width="83" Content="-" FontSize="20" Background="#FFF4F4F4" Click="minus_Click"/>
+        <Button x:Name="plus"  HorizontalAlignment="Left" Margin="279,342,0,0" VerticalAlignment="Top" Height="52" Width="83" Click="plus_Click" Content="+" FontSize="20" Background="#FFF4F4F4"/>
+        <Button x:Name="eq" Content="=" HorizontalAlignment="Left" Margin="125,139,0,0" VerticalAlignment="Top" Height="51" Width="77" Background="#FFE8B200" Click="eq_Click" FontSize="16"/>
+        <Button x:Name="change_znak"  HorizontalAlignment="Left" Margin="50,342,0,0" VerticalAlignment="Top" Height="52" Width="77" Content="+/-" FontSize="20" Background="#FFFBFBFB" Click="change_znak_Click"/>
     </Grid>
 </Window>

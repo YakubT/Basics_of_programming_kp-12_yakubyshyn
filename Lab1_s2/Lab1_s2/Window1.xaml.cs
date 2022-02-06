@@ -30,7 +30,7 @@ namespace Lab1_s2
         private void Bcl (object sender,EventArgs e)
         {
             input = true;
-            if ((string) label1.Content == "0" || cl==true)
+            if ((string) label1.Content == "0" || cl==true || (string)label1.Content == "Incorrect data")
                 label1.Content = "";
             Button b = (Button)sender;
             label1.Content += b.Name.Substring(1);
@@ -117,7 +117,7 @@ namespace Lab1_s2
             if (((int)c >= 34) && ((int) c <=43))
             {
                 input = true;
-                if ((string)label1.Content == "0" || cl == true)
+                if ((string)label1.Content == "0" || cl == true || (string)label1.Content == "Incorrect data")
                     label1.Content = "";
                 c = (char)((int)c - 34 + 48);
                 label1.Content += c.ToString();
@@ -149,17 +149,27 @@ namespace Lab1_s2
                 switch (type)
                 {
                     case '+':
-                        label1.Content = Math.Round(Convert.ToDouble(label1.Content.ToString()) + mem,7).ToString();
+                        label1.Content = Math.Round(Convert.ToDouble(label1.Content.ToString()) + mem, 7).ToString();
                         break;
                     case '-':
-                        label1.Content = Math.Round(mem - Convert.ToDouble(label1.Content.ToString()),7).ToString();
+                        label1.Content = Math.Round(mem - Convert.ToDouble(label1.Content.ToString()), 7).ToString();
                         break;
                     case '/':
-                        label1.Content = Math.Round(mem / Convert.ToDouble(label1.Content.ToString()),7).ToString();
+                        if (Math.Abs(Convert.ToDouble(label1.Content.ToString())) < 0.00000001)
+                            label1.Content = "Incorrect data";
+                        else
+                        label1.Content = Math.Round(mem / Convert.ToDouble(label1.Content.ToString()), 7).ToString();
                         break;
                     case '*':
-                        label1.Content = Math.Round((Convert.ToDouble(label1.Content.ToString()) * mem),7).ToString();
+                        label1.Content = Math.Round((Convert.ToDouble(label1.Content.ToString()) * mem), 7).ToString();
                         break;
+                }
+                if ((string)label1.Content == "Incorrect data")
+                {
+                    type = '+';
+                    input = false;
+                    mem = 0;
+                    return;
                 }
                 mem = Convert.ToDouble(label1.Content.ToString());
                 cl = true;
@@ -181,16 +191,145 @@ namespace Lab1_s2
                         label1.Content = Math.Round(mem - Convert.ToDouble(label1.Content.ToString()), 7).ToString();
                         break;
                     case '/':
+                        if (Math.Abs(Convert.ToDouble(label1.Content.ToString())) < 0.00000001)
+                            label1.Content = "Incorrect data";
+                        else
                         label1.Content = Math.Round(mem / Convert.ToDouble(label1.Content.ToString()), 7).ToString();
                         break;
                     case '*':
                         label1.Content = Math.Round((Convert.ToDouble(label1.Content.ToString()) * mem), 7).ToString();
                         break;
                 }
+                if ((string)label1.Content == "Incorrect data")
+                {
+                    type = '+';
+                    input = false;
+                    mem = 0;
+                    return;
+                }
                 mem = Convert.ToDouble(label1.Content.ToString());
                 cl = true;
                 type = '*';
                 input = false;
+            }
+        }
+
+        private void minus_Click(object sender, RoutedEventArgs e)
+        {
+            if (input)
+            {
+                switch (type)
+                {
+                    case '+':
+                        label1.Content = Math.Round(Convert.ToDouble(label1.Content.ToString()) + mem, 7).ToString();
+                        break;
+                    case '-':
+                        label1.Content = Math.Round(mem - Convert.ToDouble(label1.Content.ToString()), 7).ToString();
+                        break;
+                    case '/':
+                        if (Math.Abs(Convert.ToDouble(label1.Content.ToString())) < 0.00000001)
+                            label1.Content = "Incorrect data";
+                        else
+                        label1.Content = Math.Round(mem / Convert.ToDouble(label1.Content.ToString()), 7).ToString();
+                        break;
+                    case '*':
+                        label1.Content = Math.Round((Convert.ToDouble(label1.Content.ToString()) * mem), 7).ToString();
+                        break;
+                }
+                if ((string)label1.Content == "Incorrect data")
+                {
+                    type = '+';
+                    input = false;
+                    mem = 0;
+                    return;
+                }
+                mem = Convert.ToDouble(label1.Content.ToString());
+                cl = true;
+                type = '-';
+                input = false;
+            }
+        }
+
+        private void plus_Click(object sender, RoutedEventArgs e)
+        {
+            if (input)
+            {
+                switch (type)
+                {
+                    case '+':
+                        label1.Content = Math.Round(Convert.ToDouble(label1.Content.ToString()) + mem, 7).ToString();
+                        break;
+                    case '-':
+                        label1.Content = Math.Round(mem - Convert.ToDouble(label1.Content.ToString()), 7).ToString();
+                        break;
+                    case '/':
+                        if (Math.Abs(Convert.ToDouble(label1.Content.ToString())) < 0.00000001)
+                            label1.Content = "Incorrect data";
+                        else
+                        label1.Content = Math.Round(mem / Convert.ToDouble(label1.Content.ToString()), 7).ToString();
+                        break;
+                    case '*':
+                        label1.Content = Math.Round((Convert.ToDouble(label1.Content.ToString()) * mem), 7).ToString();
+                        break;
+                }
+                if ((string) label1.Content == "Incorrect data")
+                {
+                    type = '+';
+                    input = false;
+                    mem = 0;
+                    return;
+                }
+                mem = Convert.ToDouble(label1.Content.ToString());
+                cl = true;
+                type = '+';
+                input = false;
+            }
+        }
+
+        private void eq_Click(object sender, RoutedEventArgs e)
+        {
+            if (input)
+            {
+                switch (type)
+                {
+                    case '+':
+                        label1.Content = Math.Round(Convert.ToDouble(label1.Content.ToString()) + mem, 7).ToString();
+                        break;
+                    case '-':
+                        label1.Content = Math.Round(mem - Convert.ToDouble(label1.Content.ToString()), 7).ToString();
+                        break;
+                    case '/':
+                        if (Math.Abs(Convert.ToDouble(label1.Content.ToString())) < 0.00000001)
+                            label1.Content = "Incorrect data";
+                        else
+                            label1.Content = Math.Round(mem / Convert.ToDouble(label1.Content.ToString()), 7).ToString();
+                        break;
+                    case '*':
+                        label1.Content = Math.Round((Convert.ToDouble(label1.Content.ToString()) * mem), 7).ToString();
+                        break;
+                }
+                if ((string)label1.Content == "Incorrect data")
+                {
+                    type = '+';
+                    input = false;
+                    mem = 0;
+                    return;
+                }
+            }
+                mem = 0;
+            cl = true;
+        }
+
+        private void change_znak_Click(object sender, RoutedEventArgs e)
+        {
+            if ((string)label1.Content != "0" && (string) label1.Content!= "Incorrect data")
+            {
+                string tmp = (string)label1.Content;
+                if (tmp[0] == '-')
+                    tmp = tmp.Substring(1);
+                else
+                    tmp = '-' + tmp;
+                label1.Content = tmp;
             }
         }
     }

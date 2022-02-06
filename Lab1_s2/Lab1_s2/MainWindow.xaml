@@ -30,7 +30,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button Content="До вікна №3 (хрестики нулики)" HorizontalAlignment="Left" Height="64" Margin="10,127,0,0" VerticalAlignment="Top" Width="343" FontSize="17" Click="Button_Click_1">
+        <Button Content="До вікна №3 (хрестики-нулики)" HorizontalAlignment="Left" Height="64" Margin="10,127,0,0" VerticalAlignment="Top" Width="343" FontSize="17" Click="Button_Click_1">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
