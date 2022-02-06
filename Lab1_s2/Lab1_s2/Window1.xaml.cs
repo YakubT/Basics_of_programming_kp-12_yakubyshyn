@@ -114,5 +114,12 @@ namespace Lab1_s2
             if ((int)c == 142)
                 comaclick();
         }
+
+        private void Backspaceb_Click(object sender, RoutedEventArgs e)
+        {
+                label1.Content = label1.Content.ToString().Substring(0, label1.Content.ToString().Length - 1);
+            if ((string)label1.Content == "")
+                label1.Content = "0";
+        }
     }
 }

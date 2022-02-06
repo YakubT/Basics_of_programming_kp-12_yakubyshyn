@@ -9,11 +9,13 @@
 
   <ItemGroup>
     <None Remove="200x200bb.jpg" />
+    <None Remove="pic.png" />
     <None Remove="кальк.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="200x200bb.jpg" />
+    <Resource Include="pic.png" />
     <Resource Include="кальк.png" />
   </ItemGroup>
 
