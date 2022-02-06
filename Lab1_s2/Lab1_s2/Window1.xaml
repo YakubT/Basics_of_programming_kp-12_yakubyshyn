@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab1_s2"
         mc:Ignorable="d"
-        Title="Вікно №2" Height="450" Width="800" ResizeMode="NoResize" WindowStyle="SingleBorderWindow" Closed="Window_Closed" WindowStartupLocation="CenterScreen" KeyUp="Window_KeyUp">
+        Title="Вікно №4" Height="450" Width="800" ResizeMode="NoResize" WindowStyle="SingleBorderWindow" Closed="Window_Closed" WindowStartupLocation="CenterScreen" KeyUp="Window_KeyUp">
     <Grid x:Name="layoutGrid">
         <Grid.Background>
             <ImageBrush ImageSource="/200x200bb.jpg"/>
@@ -16,7 +16,7 @@
         <Button Content="На головне вікно (№1)" HorizontalAlignment="Left" Height="93" Margin="542,315,0,0" VerticalAlignment="Top" Width="235" FontSize="22" Click="Button_Click"/>
         <Image x:Name="im" HorizontalAlignment="Left" Height="345" Margin="50,48,0,0" VerticalAlignment="Top" Width="312" Source="/кальк.png" Stretch="Fill"/>
         <Label x:Name="label1" Content="0" HorizontalAlignment="Left" Margin="50,69,0,0" VerticalAlignment="Top" Width="312" Height="72" FontSize="40"/>
-        <Button x:Name="Backspaceb"  HorizontalAlignment="Left" Height="51" Margin="282,139,0,0" VerticalAlignment="Top" Width="81" Click="Backspaceb_Click">
+        <Button x:Name="Backspaceb"  HorizontalAlignment="Left" Height="51" Margin="279,139,0,0" VerticalAlignment="Top" Width="83" Click="Backspaceb_Click">
             <Button.Content>
                 <Image Source="/pic.png" Width="80" Height="60" />
             </Button.Content>
@@ -24,6 +24,16 @@
                 <ImageBrush ImageSource="/pic.png" Stretch="Fill"/>
             </Button.Background>
         </Button>
-        <Button x:Name="clear" Content="C" HorizontalAlignment="Left" Margin="201,139,0,0" VerticalAlignment="Top" Height="51" Width="81" Background="#FFF4F4F4" Click="clear_Click"/>
+        <Button x:Name="clear" Content="C" HorizontalAlignment="Left" Margin="202,139,0,0" VerticalAlignment="Top" Height="51" Width="77" Background="#FFF4F4F4" Click="clear_Click"/>
+        <Button x:Name="div"  HorizontalAlignment="Left" Margin="279,190,0,0" VerticalAlignment="Top" Height="51" Width="83" Click="div_Click">
+            <Button.Content>
+                <Image Source="/div.png" Width="80" Height="60"/>
+            </Button.Content>
+            <Button.Background>
+                <ImageBrush ImageSource="/div.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="mul"  HorizontalAlignment="Left" Margin="279,240,0,0" VerticalAlignment="Top" Height="51" Width="83" Click="mul_Click" Content="x" FontSize="20" Background="#FFF4F4F4">
+        </Button>
     </Grid>
 </Window>

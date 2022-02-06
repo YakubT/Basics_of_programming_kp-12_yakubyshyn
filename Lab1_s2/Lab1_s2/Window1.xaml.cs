@@ -15,15 +15,26 @@ namespace Lab1_s2
     /// <summary>
     /// Логика взаимодействия для Window1.xaml
     /// </summary>
+    
+
+
+    // Вікно з калькулятором (переплутав друге з четвертим вікном)
     public partial class Window1 : Window
     {
+        
         Button[] arr = new Button[11];
+        char type = '+';
+        bool cl = false;
+        double mem = 0;
+        bool input = false;
         private void Bcl (object sender,EventArgs e)
         {
-            if ((string) label1.Content == "0")
+            input = true;
+            if ((string) label1.Content == "0" || cl==true)
                 label1.Content = "";
             Button b = (Button)sender;
             label1.Content += b.Name.Substring(1);
+            cl = false;
         }
         private void comaclick(object sender, EventArgs e)
         {
@@ -102,14 +113,15 @@ namespace Lab1_s2
 
         private void Window_KeyUp(object sender, KeyEventArgs e)
         {
-            
             char c = (char)e.Key;
             if (((int)c >= 34) && ((int) c <=43))
             {
-                if ((string)label1.Content == "0")
+                input = true;
+                if ((string)label1.Content == "0" || cl == true)
                     label1.Content = "";
                 c = (char)((int)c - 34 + 48);
                 label1.Content += c.ToString();
+                cl = false;
             }
             if ((int)c == 142)
                 comaclick();
@@ -124,7 +136,62 @@ namespace Lab1_s2
 
         private void clear_Click(object sender, RoutedEventArgs e)
         {
+            mem = 0;
+            type = '+';
             label1.Content = "0";
+            input = false;
+        }
+
+        private void div_Click(object sender, RoutedEventArgs e)
+        {
+            if (input)
+            {
+                switch (type)
+                {
+                    case '+':
+                        label1.Content = Math.Round(Convert.ToDouble(label1.Content.ToString()) + mem,7).ToString();
+                        break;
+                    case '-':
+                        label1.Content = Math.Round(mem - Convert.ToDouble(label1.Content.ToString()),7).ToString();
+                        break;
+                    case '/':
+                        label1.Content = Math.Round(mem / Convert.ToDouble(label1.Content.ToString()),7).ToString();
+                        break;
+                    case '*':
+                        label1.Content = Math.Round((Convert.ToDouble(label1.Content.ToString()) * mem),7).ToString();
+                        break;
+                }
+                mem = Convert.ToDouble(label1.Content.ToString());
+                cl = true;
+                type = '/';
+                input = false;
+            }
+        }
+
+        private void mul_Click(object sender, RoutedEventArgs e)
+        {
+            if (input)
+            {
+                switch (type)
+                {
+                    case '+':
+                        label1.Content = Math.Round(Convert.ToDouble(label1.Content.ToString()) + mem, 7).ToString();
+                        break;
+                    case '-':
+                        label1.Content = Math.Round(mem - Convert.ToDouble(label1.Content.ToString()), 7).ToString();
+                        break;
+                    case '/':
+                        label1.Content = Math.Round(mem / Convert.ToDouble(label1.Content.ToString()), 7).ToString();
+                        break;
+                    case '*':
+                        label1.Content = Math.Round((Convert.ToDouble(label1.Content.ToString()) * mem), 7).ToString();
+                        break;
+                }
+                mem = Convert.ToDouble(label1.Content.ToString());
+                cl = true;
+                type = '*';
+                input = false;
+            }
         }
     }
 }

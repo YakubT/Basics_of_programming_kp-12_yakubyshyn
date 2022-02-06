@@ -28,7 +28,7 @@ namespace Lab1_s2
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Hide();
-            Window1 neww = new Window1();
+            Window3 neww = new Window3();
             neww.Show();
         }
 
@@ -42,7 +42,7 @@ namespace Lab1_s2
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             Hide();
-            Window3 neww = new Window3();
+            Window1 neww = new Window1();
             neww.Show();
         }
 

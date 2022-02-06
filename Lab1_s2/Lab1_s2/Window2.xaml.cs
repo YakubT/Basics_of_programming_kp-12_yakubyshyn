@@ -15,6 +15,10 @@ namespace Lab1_s2
     /// <summary>
     /// Логика взаимодействия для Window2.xaml
     /// </summary>
+    /// 
+
+
+    // Вікно з хрестиками нуликами
     public partial class Window2 : Window
     {
         bool isx;

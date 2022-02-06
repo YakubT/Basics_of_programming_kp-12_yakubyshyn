@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab1_s2"
         mc:Ignorable="d"
-        Title="Вікно №4" Height="450" Width="800" ResizeMode="NoResize" Closed="Window_Closed" Foreground="#FFF30C0C" WindowStartupLocation="CenterScreen">
+        Title="Вікно №2" Height="450" Width="800" ResizeMode="NoResize" Closed="Window_Closed" Foreground="#FFF30C0C" WindowStartupLocation="CenterScreen">
     <Grid>
         <Button Content="На головне вікно (№1)" HorizontalAlignment="Left" Height="93" Margin="537,313,0,0" VerticalAlignment="Top" Width="235" FontSize="22" Click="Button_Click"/>
 
