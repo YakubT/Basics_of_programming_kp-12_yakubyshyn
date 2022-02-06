@@ -1,0 +1,114 @@
+﻿<Window x:Class="Lab1_s2.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab1_s2"
+        mc:Ignorable="d"
+        Title="Вікно №3" Height="450" Width="800" ResizeMode="NoResize" Closed="Window_Closed" Background="#FFCBC0C0" WindowStartupLocation="CenterScreen" Activated="Window_Activated">
+    <Grid>
+        <Button Content="На головне вікно (№1)" HorizontalAlignment="Left" Height="93" Margin="542,315,0,0" VerticalAlignment="Top" Width="235" FontSize="22" Click="Button_Click"/>
+        <ComboBox x:Name="CB1" HorizontalAlignment="Left" Margin="28,44,0,0" VerticalAlignment="Top" Width="47" Height="32" FontWeight="Bold" IsEditable="True">
+            <ListBoxItem Content="X" Background="{x:Null}" FontWeight="Bold" Foreground="Red"/>
+            <ListBoxItem Content="O" Background="{x:Null}" FontWeight="Bold" Foreground="Lime"/>
+        </ComboBox>
+        <ComboBox x:Name="CB2" HorizontalAlignment="Left" Margin="90,44,0,0" VerticalAlignment="Top" Width="47" Height="32" FontWeight="Bold">
+            <ListBoxItem Content="X" Background="{x:Null}" FontWeight="Bold" Foreground="Red"/>
+            <ListBoxItem Content="O" Background="{x:Null}" FontWeight="Bold" Foreground="Lime"/>
+        </ComboBox>
+        <ComboBox x:Name="CB3" HorizontalAlignment="Left" Margin="151,44,0,0" VerticalAlignment="Top" Width="47" Height="32" FontWeight="Bold">
+            <ListBoxItem Content="X" Background="{x:Null}" FontWeight="Bold" Foreground="Red"/>
+            <ListBoxItem Content="O" Background="{x:Null}" FontWeight="Bold" Foreground="Lime"/>
+        </ComboBox>
+        <ComboBox x:Name="CB4" HorizontalAlignment="Left" Margin="213,44,0,0" VerticalAlignment="Top" Width="47" Height="32" FontWeight="Bold">
+            <ListBoxItem Content="X" Background="{x:Null}" FontWeight="Bold" Foreground="Red"/>
+            <ListBoxItem Content="O" Background="{x:Null}" FontWeight="Bold" Foreground="Lime"/>
+        </ComboBox>
+        <ComboBox x:Name="CB5" HorizontalAlignment="Left" Margin="268,44,0,0" VerticalAlignment="Top" Width="47" Height="32" FontWeight="Bold">
+            <ListBoxItem Content="X" Background="{x:Null}" FontWeight="Bold" Foreground="Red"/>
+            <ListBoxItem Content="O" Background="{x:Null}" FontWeight="Bold" Foreground="Lime"/>
+        </ComboBox>
+        <ComboBox x:Name="CB6" HorizontalAlignment="Left" Margin="28,86,0,0" VerticalAlignment="Top" Width="47" Height="32" FontWeight="Bold">
+            <ListBoxItem Content="X" Background="{x:Null}" FontWeight="Bold" Foreground="Red"/>
+            <ListBoxItem Content="O" Background="{x:Null}" FontWeight="Bold" Foreground="Lime"/>
+        </ComboBox>
+        <ComboBox x:Name="CB7" HorizontalAlignment="Left" Margin="90,86,0,0" VerticalAlignment="Top" Width="47" Height="32" FontWeight="Bold">
+            <ListBoxItem Content="X" Background="{x:Null}" FontWeight="Bold" Foreground="Red"/>
+            <ListBoxItem Content="O" Background="{x:Null}" FontWeight="Bold" Foreground="Lime"/>
+        </ComboBox>
+        <ComboBox x:Name="CB8" HorizontalAlignment="Left" Margin="151,86,0,0" VerticalAlignment="Top" Width="47" Height="32" FontWeight="Bold">
+            <ListBoxItem Content="X" Background="{x:Null}" FontWeight="Bold" Foreground="Red"/>
+            <ListBoxItem Content="O" Background="{x:Null}" FontWeight="Bold" Foreground="Lime"/>
+        </ComboBox>
+        <ComboBox x:Name="CB9" HorizontalAlignment="Left" Margin="213,86,0,0" VerticalAlignment="Top" Width="47" Height="32" FontWeight="Bold">
+            <ListBoxItem Content="X" Background="{x:Null}" FontWeight="Bold" Foreground="Red"/>
+            <ListBoxItem Content="O" Background="{x:Null}" FontWeight="Bold" Foreground="Lime"/>
+        </ComboBox>
+        <ComboBox x:Name="CB10" HorizontalAlignment="Left" Margin="268,86,0,0" VerticalAlignment="Top" Width="47" Height="32" FontWeight="Bold">
+            <ListBoxItem Content="X" Background="{x:Null}" FontWeight="Bold" Foreground="Red"/>
+            <ListBoxItem Content="O" Background="{x:Null}" FontWeight="Bold" Foreground="Lime"/>
+        </ComboBox>
+        <ComboBox x:Name="CB11" HorizontalAlignment="Left" Margin="28,127,0,0" VerticalAlignment="Top" Width="47" Height="32" FontWeight="Bold">
+            <ListBoxItem Content="X" Background="{x:Null}" FontWeight="Bold" Foreground="Red"/>
+            <ListBoxItem Content="O" Background="{x:Null}" FontWeight="Bold" Foreground="Lime"/>
+        </ComboBox>
+        <ComboBox x:Name="CB12" HorizontalAlignment="Left" Margin="90,127,0,0" VerticalAlignment="Top" Width="47" Height="32" FontWeight="Bold">
+            <ListBoxItem Content="X" Background="{x:Null}" FontWeight="Bold" Foreground="Red"/>
+            <ListBoxItem Content="O" Background="{x:Null}" FontWeight="Bold" Foreground="Lime"/>
+        </ComboBox>
+        <ComboBox x:Name="CB13" HorizontalAlignment="Left" Margin="151,127,0,0" VerticalAlignment="Top" Width="47" Height="32" FontWeight="Bold">
+            <ListBoxItem Content="X" Background="{x:Null}" FontWeight="Bold" Foreground="Red"/>
+            <ListBoxItem Content="O" Background="{x:Null}" FontWeight="Bold" Foreground="Lime"/>
+        </ComboBox>
+        <ComboBox x:Name="CB14" HorizontalAlignment="Left" Margin="213,127,0,0" VerticalAlignment="Top" Width="47" Height="32" FontWeight="Bold">
+            <ListBoxItem Content="X" Background="{x:Null}" FontWeight="Bold" Foreground="Red"/>
+            <ListBoxItem Content="O" Background="{x:Null}" FontWeight="Bold" Foreground="Lime"/>
+        </ComboBox>
+        <ComboBox x:Name="CB15" HorizontalAlignment="Left" Margin="268,127,0,0" VerticalAlignment="Top" Width="47" Height="32" FontWeight="Bold">
+            <ListBoxItem Content="X" Background="{x:Null}" FontWeight="Bold" Foreground="Red"/>
+            <ListBoxItem Content="O" Background="{x:Null}" FontWeight="Bold" Foreground="Lime"/>
+        </ComboBox>
+        <ComboBox x:Name="CB16" HorizontalAlignment="Left" Margin="28,166,0,0" VerticalAlignment="Top" Width="47" Height="32" FontWeight="Bold">
+            <ListBoxItem Content="X" Background="{x:Null}" FontWeight="Bold" Foreground="Red"/>
+            <ListBoxItem Content="O" Background="{x:Null}" FontWeight="Bold" Foreground="Lime"/>
+        </ComboBox>
+        <ComboBox x:Name="CB17" HorizontalAlignment="Left" Margin="90,166,0,0" VerticalAlignment="Top" Width="47" Height="32" FontWeight="Bold">
+            <ListBoxItem Content="X" Background="{x:Null}" FontWeight="Bold" Foreground="Red"/>
+            <ListBoxItem Content="O" Background="{x:Null}" FontWeight="Bold" Foreground="Lime"/>
+        </ComboBox>
+        <ComboBox x:Name="CB18" HorizontalAlignment="Left" Margin="151,166,0,0" VerticalAlignment="Top" Width="47" Height="32" FontWeight="Bold">
+            <ListBoxItem Content="X" Background="{x:Null}" FontWeight="Bold" Foreground="Red"/>
+            <ListBoxItem Content="O" Background="{x:Null}" FontWeight="Bold" Foreground="Lime"/>
+        </ComboBox>
+        <ComboBox x:Name="CB19" HorizontalAlignment="Left" Margin="213,166,0,0" VerticalAlignment="Top" Width="47" Height="32" FontWeight="Bold">
+            <ListBoxItem Content="X" Background="{x:Null}" FontWeight="Bold" Foreground="Red"/>
+            <ListBoxItem Content="O" Background="{x:Null}" FontWeight="Bold" Foreground="Lime"/>
+        </ComboBox>
+        <ComboBox x:Name="CB20" HorizontalAlignment="Left" Margin="268,166,0,0" VerticalAlignment="Top" Width="47" Height="32" FontWeight="Bold">
+            <ListBoxItem Content="X" Background="{x:Null}" FontWeight="Bold" Foreground="Red"/>
+            <ListBoxItem Content="O" Background="{x:Null}" FontWeight="Bold" Foreground="Lime"/>
+        </ComboBox>
+        <ComboBox x:Name="CB21" HorizontalAlignment="Left" Margin="28,206,0,0" VerticalAlignment="Top" Width="47" Height="32" FontWeight="Bold">
+            <ListBoxItem Content="X" Background="{x:Null}" FontWeight="Bold" Foreground="Red"/>
+            <ListBoxItem Content="O" Background="{x:Null}" FontWeight="Bold" Foreground="Lime"/>
+        </ComboBox>
+        <ComboBox x:Name="CB22" HorizontalAlignment="Left" Margin="90,206,0,0" VerticalAlignment="Top" Width="47" Height="32" FontWeight="Bold">
+            <ListBoxItem Content="X" Background="{x:Null}" FontWeight="Bold" Foreground="Red"/>
+            <ListBoxItem Content="O" Background="{x:Null}" FontWeight="Bold" Foreground="Lime"/>
+        </ComboBox>
+        <ComboBox x:Name="CB23" HorizontalAlignment="Left" Margin="151,206,0,0" VerticalAlignment="Top" Width="47" Height="32" FontWeight="Bold">
+            <ListBoxItem Content="X" Background="{x:Null}" FontWeight="Bold" Foreground="Red"/>
+            <ListBoxItem Content="O" Background="{x:Null}" FontWeight="Bold" Foreground="Lime"/>
+        </ComboBox>
+        <ComboBox x:Name="CB24" HorizontalAlignment="Left" Margin="213,206,0,0" VerticalAlignment="Top" Width="47" Height="32" FontWeight="Bold">
+            <ListBoxItem Content="X" Background="{x:Null}" FontWeight="Bold" Foreground="Red"/>
+            <ListBoxItem Content="O" Background="{x:Null}" FontWeight="Bold" Foreground="Lime"/>
+        </ComboBox>
+        <ComboBox x:Name="CB25" HorizontalAlignment="Left" Margin="268,206,0,0" VerticalAlignment="Top" Width="47" Height="32" FontWeight="Bold">
+            <ListBoxItem Content="X" Background="{x:Null}" FontWeight="Bold" Foreground="Red"/>
+            <ListBoxItem Content="O" Background="{x:Null}" FontWeight="Bold" Foreground="Lime"/>
+        </ComboBox>
+        <Button Content="Нова гра" HorizontalAlignment="Left" Height="90" Margin="74,272,0,0" VerticalAlignment="Top" Width="201" Click="Button_Click_1" FontSize="22"/>
+
+    </Grid>
+</Window>
