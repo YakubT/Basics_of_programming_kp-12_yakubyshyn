@@ -121,5 +121,10 @@ namespace Lab1_s2
             if ((string)label1.Content == "")
                 label1.Content = "0";
         }
+
+        private void clear_Click(object sender, RoutedEventArgs e)
+        {
+            label1.Content = "0";
+        }
     }
 }
