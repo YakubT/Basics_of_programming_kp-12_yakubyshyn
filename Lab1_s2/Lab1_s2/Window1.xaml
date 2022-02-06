@@ -15,6 +15,5 @@
         </Grid.ColumnDefinitions>
         <Button Content="На головне вікно (№1)" HorizontalAlignment="Left" Height="93" Margin="542,315,0,0" VerticalAlignment="Top" Width="235" FontSize="22" Click="Button_Click"/>
         <Image x:Name="im" HorizontalAlignment="Left" Height="345" Margin="50,48,0,0" VerticalAlignment="Top" Width="312" Source="/кальк.png" Stretch="Fill"/>
-        <Label x:Name="label1" Content="0" HorizontalAlignment="Left" Margin="50,69,0,0" VerticalAlignment="Top" Width="312" Height="72" FontSize="40"/>
-    </Grid>
+        <Label x:Name="label1" Content="0" HorizontalAlignment="Left" Margin="50,69,0,0" VerticalAlignment="Top" Width="312" Height="72" FontSize="40"/></Grid>
 </Window>

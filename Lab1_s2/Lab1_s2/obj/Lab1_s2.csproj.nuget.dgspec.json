@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Anatoly\\OneDrive\\Документи\\Progr_2s\\Lab1_s2\\Lab1_s2\\Lab1_s2.csproj": {}
+    "C:\\Users\\Anatoly\\OneDrive\\Документи\\Progr_2s\\Rep\\Lab1_s2\\Lab1_s2\\Lab1_s2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Anatoly\\OneDrive\\Документи\\Progr_2s\\Lab1_s2\\Lab1_s2\\Lab1_s2.csproj": {
+    "C:\\Users\\Anatoly\\OneDrive\\Документи\\Progr_2s\\Rep\\Lab1_s2\\Lab1_s2\\Lab1_s2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anatoly\\OneDrive\\Документи\\Progr_2s\\Lab1_s2\\Lab1_s2\\Lab1_s2.csproj",
+        "projectUniqueName": "C:\\Users\\Anatoly\\OneDrive\\Документи\\Progr_2s\\Rep\\Lab1_s2\\Lab1_s2\\Lab1_s2.csproj",
         "projectName": "Lab1_s2",
-        "projectPath": "C:\\Users\\Anatoly\\OneDrive\\Документи\\Progr_2s\\Lab1_s2\\Lab1_s2\\Lab1_s2.csproj",
+        "projectPath": "C:\\Users\\Anatoly\\OneDrive\\Документи\\Progr_2s\\Rep\\Lab1_s2\\Lab1_s2\\Lab1_s2.csproj",
         "packagesPath": "C:\\Users\\Anatoly\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anatoly\\OneDrive\\Документи\\Progr_2s\\Lab1_s2\\Lab1_s2\\obj\\",
+        "outputPath": "C:\\Users\\Anatoly\\OneDrive\\Документи\\Progr_2s\\Rep\\Lab1_s2\\Lab1_s2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Anatoly\\AppData\\Roaming\\NuGet\\NuGet.Config",
