@@ -9,7 +9,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using System.IO;
 namespace Lab1_s2
 {
     /// <summary>
@@ -32,6 +32,67 @@ namespace Lab1_s2
             MainWindow mw = new MainWindow();
             Hide();
             mw.Show();
+        }
+
+        private bool is_fill()
+        {
+            for (int i=1;i<=4;i++)
+            {
+                TextBox tb = this.FindName("t" + i.ToString()) as TextBox;
+                if (tb.Text == "")
+                    return false;
+            }
+            return true;
+        }
+        private void addfunc()
+        {
+            StreamWriter fout = new StreamWriter("data.txt", true);
+            string s = t1.Text;
+            s = s.Replace(' ', '_');
+            MessageBox.Show(t1.Text);
+            MessageBox.Show(s);
+            fout.WriteLine(s+" "+t2.Text+" "+t3.Text+" "+t4.Text);
+            fout.Close();
+        }
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            if (!is_fill())
+            {
+                MessageBox.Show("Не всі поля заповнені");
+                return;
+            }
+            StreamReader fin;
+            bool add = true;
+            try
+            {
+                fin = new StreamReader("data.txt");
+                while (!fin.EndOfStream)
+                {
+                    string s = fin.ReadLine();
+                    string[] smas = s.Split();
+                    if (smas[3]==t4.Text)
+                    {
+                        add = false;
+                        break;
+                    }
+                }
+                fin.Close();
+            }
+            catch
+            {
+                add = true;
+            }
+            
+            if (!add)
+            {
+                MessageBox.Show("Студент з такою заліковою книжкою уже є в системі");
+            }
+            else
+            {
+                addfunc();
+                MessageBox.Show("Операція прошла успішно");
+            }
+
         }
     }
 }

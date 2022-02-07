@@ -5,9 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab1_s2"
         mc:Ignorable="d"
-        Title="Вікно №2" Height="450" Width="800" ResizeMode="NoResize" Closed="Window_Closed" Foreground="#FFF30C0C" WindowStartupLocation="CenterScreen">
+        Title="Вікно №2" Height="479" Width="800" ResizeMode="NoResize" Closed="Window_Closed" Foreground="#FFF30C0C" WindowStartupLocation="CenterScreen">
     <Grid>
         <Button Content="На головне вікно (№1)" HorizontalAlignment="Left" Height="93" Margin="537,313,0,0" VerticalAlignment="Top" Width="235" FontSize="22" Click="Button_Click"/>
+        <TextBox x:Name="t1" HorizontalAlignment="Left" Height="23" Margin="42,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="227"/>
+        <Label Content="Введіть ПІП" HorizontalAlignment="Left" Margin="42,24,0,0" VerticalAlignment="Top" Width="227"/>
+        <Label Content="Введіть групу" HorizontalAlignment="Left" Margin="42,114,0,0" VerticalAlignment="Top" Width="227"/>
+        <Label Content="Введіть рік народження" HorizontalAlignment="Left" Margin="42,206,0,0" VerticalAlignment="Top" Width="227"/>
+        <Label Content="Введіть номер залікової книжки" HorizontalAlignment="Left" Margin="42,295,0,0" VerticalAlignment="Top" Width="227"/>
+        <Button Content="Додати до бази" HorizontalAlignment="Left" Height="39" Margin="24,382,0,0" VerticalAlignment="Top" Width="114" Click="Button_Click_1"/>
+        <Button Content="Видалити з бази" HorizontalAlignment="Left" Height="39" Margin="176,382,0,0" VerticalAlignment="Top" Width="114"/>
+        <TextBox x:Name="t2" HorizontalAlignment="Left" Height="23" Margin="42,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="227"/>
+        <TextBox x:Name="t3" HorizontalAlignment="Left" Height="23" Margin="42,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="227"/>
+        <TextBox x:Name="t4" HorizontalAlignment="Left" Height="24" Margin="42,336,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="227"/>
 
     </Grid>
 </Window>

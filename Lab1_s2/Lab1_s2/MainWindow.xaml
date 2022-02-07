@@ -22,7 +22,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button Content="До вікна №2" HorizontalAlignment="Left" Height="64" Margin="10,35,0,0" VerticalAlignment="Top" Width="343" FontSize="25" Click="Button_Click">
+        <Button Content="До вікна №2 (студенти)" HorizontalAlignment="Left" Height="64" Margin="10,35,0,0" VerticalAlignment="Top" Width="374" FontSize="25" Click="Button_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
@@ -30,7 +30,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button Content="До вікна №3 (хрестики-нулики)" HorizontalAlignment="Left" Height="64" Margin="10,127,0,0" VerticalAlignment="Top" Width="343" FontSize="17" Click="Button_Click_1">
+        <Button Content="До вікна №3 (хрестики-нулики)" HorizontalAlignment="Left" Height="64" Margin="10,127,0,0" VerticalAlignment="Top" Width="374" FontSize="17" Click="Button_Click_1">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
@@ -38,7 +38,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button Content="До вікна №4 (Калькулятор)" HorizontalAlignment="Left" Height="64" Margin="10,207,0,0" VerticalAlignment="Top" Width="343" FontSize="25" Click="Button_Click_2">
+        <Button Content="До вікна №4 (Калькулятор)" HorizontalAlignment="Left" Height="64" Margin="10,207,0,0" VerticalAlignment="Top" Width="374" FontSize="25" Click="Button_Click_2">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
@@ -46,7 +46,7 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button Content="До вікна №5" HorizontalAlignment="Left" Height="64" Margin="10,288,0,0" VerticalAlignment="Top" Width="343" FontSize="25" Click="Button_Click_3">
+        <Button Content="До вікна №5 (Інформація про розробника)" HorizontalAlignment="Left" Height="64" Margin="10,288,0,0" VerticalAlignment="Top" Width="374" FontSize="18" Click="Button_Click_3">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
