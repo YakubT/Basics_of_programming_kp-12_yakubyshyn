@@ -13,11 +13,13 @@
         <Label Content="Введіть групу" HorizontalAlignment="Left" Margin="42,114,0,0" VerticalAlignment="Top" Width="227"/>
         <Label Content="Введіть рік народження" HorizontalAlignment="Left" Margin="42,206,0,0" VerticalAlignment="Top" Width="227"/>
         <Label Content="Введіть номер залікової книжки" HorizontalAlignment="Left" Margin="42,295,0,0" VerticalAlignment="Top" Width="227"/>
-        <Button Content="Додати до бази" HorizontalAlignment="Left" Height="39" Margin="24,382,0,0" VerticalAlignment="Top" Width="114" Click="Button_Click_1"/>
-        <Button Content="Видалити з бази" HorizontalAlignment="Left" Height="39" Margin="176,382,0,0" VerticalAlignment="Top" Width="114"/>
+        <Button Content="Додати до бази" HorizontalAlignment="Left" Height="39" Margin="81,382,0,0" VerticalAlignment="Top" Width="114" Click="Button_Click_1"/>
+        <Button Content="Видалити з бази" HorizontalAlignment="Center" Height="39" Margin="0,182,0,0" VerticalAlignment="Top" Width="114" Click="Button_Click_2"/>
         <TextBox x:Name="t2" HorizontalAlignment="Left" Height="23" Margin="42,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="227"/>
         <TextBox x:Name="t3" HorizontalAlignment="Left" Height="23" Margin="42,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="227"/>
         <TextBox x:Name="t4" HorizontalAlignment="Left" Height="24" Margin="42,336,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="227"/>
+        <Label Content="Введіть номер залікової книжки" HorizontalAlignment="Left" Margin="307,104,0,0" VerticalAlignment="Top" Width="228"/>
+        <TextBox x:Name="t4_Copy" HorizontalAlignment="Left" Height="24" Margin="307,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="228"/>
 
     </Grid>
 </Window>

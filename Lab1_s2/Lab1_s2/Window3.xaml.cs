@@ -49,8 +49,6 @@ namespace Lab1_s2
             StreamWriter fout = new StreamWriter("data.txt", true);
             string s = t1.Text;
             s = s.Replace(' ', '_');
-            MessageBox.Show(t1.Text);
-            MessageBox.Show(s);
             fout.WriteLine(s+" "+t2.Text+" "+t3.Text+" "+t4.Text);
             fout.Close();
         }
@@ -93,6 +91,47 @@ namespace Lab1_s2
                 MessageBox.Show("Операція прошла успішно");
             }
 
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            StreamReader fin;
+            try
+            {
+                fin = new StreamReader("data.txt");
+                bool f = false;
+                string res = "";
+                while (!fin.EndOfStream)
+                {
+                    string s = fin.ReadLine();
+                    string[] smas = s.Split();
+                    if (smas[3] == t4_Copy.Text)
+                    {
+                        f = true;
+                    }
+                    else
+                        res += s+"\n";
+                }
+                fin.Close();
+
+                if (f)
+                {
+                    StreamWriter fout = new StreamWriter("data.txt");
+                    fout.Write(res);
+                    MessageBox.Show("Операція прошла успішно");
+                    fout.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Студента з такою заліковою немає");
+                }
+                
+            }
+            catch
+            {
+                MessageBox.Show("Файла зі студентами ще не існує (нуль студентів в базі)");
+                return;
+            }
         }
     }
 }
