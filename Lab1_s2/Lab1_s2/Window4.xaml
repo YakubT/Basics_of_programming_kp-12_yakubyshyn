@@ -5,9 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab1_s2"
         mc:Ignorable="d"
-        Title="Вікно №5" Height="450" Width="800" ResizeMode="NoResize" Closed="Window_Closed" Background="{DynamicResource {x:Static SystemColors.InactiveCaptionBrushKey}}" WindowStartupLocation="CenterScreen">
+        Title="Вікно №5" Height="450" Width="826" ResizeMode="NoResize" Closed="Window_Closed" Background="{DynamicResource {x:Static SystemColors.InactiveCaptionBrushKey}}" WindowStartupLocation="CenterScreen">
     <Grid>
         <Button Content="На головне вікно (№1)" HorizontalAlignment="Left" Height="93" Margin="542,315,0,0" VerticalAlignment="Top" Width="235" FontSize="22" Click="Button_Click"/>
+        <Label x:Name="lb" Content="Відомості про розробника:" HorizontalAlignment="Center" Height="259" Margin="0,23,0,0" VerticalAlignment="Top" Width="780" FontSize="20"/>
 
     </Grid>
 </Window>

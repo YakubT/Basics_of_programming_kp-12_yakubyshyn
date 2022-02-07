@@ -20,11 +20,13 @@ namespace Lab1_s2
         public Window4()
         {
             InitializeComponent();
+            lb.Content = "Відомості про розробника: \n Якубишин Анатолій Сергійович, група КП-12, рік створення - 2022";
         }
 
         private void Window_Closed(object sender, EventArgs e)
         {
             System.Windows.Application.Current.Shutdown();
+            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

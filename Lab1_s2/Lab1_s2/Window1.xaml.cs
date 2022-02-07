@@ -316,8 +316,10 @@ namespace Lab1_s2
                     return;
                 }
             }
-                mem = 0;
+            type = '+';
+            mem = 0;
             cl = true;
+            input = true;
         }
 
         private void change_znak_Click(object sender, RoutedEventArgs e)
