@@ -88,7 +88,7 @@ namespace Lab1_s2
             else
             {
                 addfunc();
-                MessageBox.Show("Операція прошла успішно");
+                MessageBox.Show("Операція пройшла успішно");
             }
 
         }
@@ -118,7 +118,7 @@ namespace Lab1_s2
                 {
                     StreamWriter fout = new StreamWriter("data.txt");
                     fout.Write(res);
-                    MessageBox.Show("Операція прошла успішно");
+                    MessageBox.Show("Операція пройшла успішно");
                     fout.Close();
                 }
                 else
