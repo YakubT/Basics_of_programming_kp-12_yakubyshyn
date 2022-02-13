@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Anatoly\\source\\repos\\Keywritting\\Keywritting\\Keywritting.csproj": {}
+    "C:\\Users\\Anatoly\\OneDrive\\Документи\\Progr_2s\\Rep\\Prac1_s2\\Keywritting\\Keywritting\\Keywritting.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Anatoly\\source\\repos\\Keywritting\\Keywritting\\Keywritting.csproj": {
+    "C:\\Users\\Anatoly\\OneDrive\\Документи\\Progr_2s\\Rep\\Prac1_s2\\Keywritting\\Keywritting\\Keywritting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anatoly\\source\\repos\\Keywritting\\Keywritting\\Keywritting.csproj",
+        "projectUniqueName": "C:\\Users\\Anatoly\\OneDrive\\Документи\\Progr_2s\\Rep\\Prac1_s2\\Keywritting\\Keywritting\\Keywritting.csproj",
         "projectName": "Keywritting",
-        "projectPath": "C:\\Users\\Anatoly\\source\\repos\\Keywritting\\Keywritting\\Keywritting.csproj",
+        "projectPath": "C:\\Users\\Anatoly\\OneDrive\\Документи\\Progr_2s\\Rep\\Prac1_s2\\Keywritting\\Keywritting\\Keywritting.csproj",
         "packagesPath": "C:\\Users\\Anatoly\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anatoly\\source\\repos\\Keywritting\\Keywritting\\obj\\",
+        "outputPath": "C:\\Users\\Anatoly\\OneDrive\\Документи\\Progr_2s\\Rep\\Prac1_s2\\Keywritting\\Keywritting\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Anatoly\\AppData\\Roaming\\NuGet\\NuGet.Config",

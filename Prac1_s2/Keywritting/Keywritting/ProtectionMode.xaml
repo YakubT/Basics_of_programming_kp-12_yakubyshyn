@@ -1,0 +1,38 @@
+﻿<Window x:Class="Keywritting.ProtectionMode"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Keywritting"
+        mc:Ignorable="d"
+        Title="Вікно режиму перевірки клавіатурного почерку" Height="284" Width="716" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Closed="Window_Closed" Background="#FF559ED1">
+    <Grid>
+        <Label Content="Режим перевірки" HorizontalAlignment="Center" Height="51" VerticalAlignment="Top" Width="264" FontSize="30" FontFamily="Comic Sans MS"/>
+        <Label Content="Кодове слово:" HorizontalAlignment="Left" Height="35" Margin="16,51,0,0" VerticalAlignment="Top" Width="134" FontSize="18" FontStyle="Italic"/>
+        <Label Content="fyfnjksq" HorizontalAlignment="Left" Height="35" Margin="142,51,0,0" VerticalAlignment="Top" Width="134" FontSize="18" FontStyle="Italic" Foreground="#FFD31A2E"/>
+        <Label Content="К-сть спроб:" HorizontalAlignment="Left" Height="35" Margin="16,86,0,0" VerticalAlignment="Top" Width="134" FontSize="18" FontStyle="Italic"/>
+        <ComboBox x:Name="CB" HorizontalAlignment="Left" Height="30" Margin="150,88,0,0" VerticalAlignment="Top" Width="42" SelectedIndex="0" SelectionChanged="ComboBox_SelectionChanged">
+            <ListBoxItem Content="5"/>
+            <ListBoxItem Content="6"/>
+            <ListBoxItem Content="7"/>
+            <ListBoxItem Content="8"/>
+            <ListBoxItem Content="9"/>
+            <ListBoxItem Content="10"/>
+        </ComboBox>
+        <Label Content="Alpha: 0,05" HorizontalAlignment="Left" Height="34" Margin="209,86,0,0" VerticalAlignment="Top" Width="134" FontSize="18" FontStyle="Italic"/>
+        <Label Content="К-сть введених символів:" HorizontalAlignment="Left" Height="35" Margin="16,123,0,0" VerticalAlignment="Top" Width="224" FontSize="18" FontStyle="Italic"/>
+        <TextBox x:Name="TB2" HorizontalAlignment="Left" Height="32" Margin="20,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontSize="20" PreviewKeyDown="TB2_PreviewKeyDown" KeyUp="TB2_KeyUp" TextChanged="TB2_TextChanged"/>
+        <Button Content="Вийти з режиму перевірки" HorizontalAlignment="Left" Height="32" Margin="10,212,0,0" VerticalAlignment="Top" Width="164" Click="Button_Click"/>
+        <Label Content="Статистичний аналіз" HorizontalAlignment="Left" Height="30" Margin="462,52,0,0" VerticalAlignment="Top" Width="186" FontSize="17" FontWeight="Bold"/>
+        <Label x:Name="lb1" Content="0" HorizontalAlignment="Left" Height="33" Margin="260,124,0,0" VerticalAlignment="Top" Width="32" FontSize="17" RenderTransformOrigin="0.419,0.195"/>
+        <Label x:Name="Ld" Content="" HorizontalAlignment="Left" Height="39" Margin="374,86,0,0" VerticalAlignment="Top" Width="323" FontSize="18" FontFamily="Courier New" FontWeight="Bold"/>
+        <Label Content="P ідентифікації:" HorizontalAlignment="Left" Height="44" Margin="374,130,0,0" VerticalAlignment="Top" Width="181" FontSize="18" FontFamily="Courier New" FontWeight="Bold"/>
+        <Label x:Name="lbP" Content="" HorizontalAlignment="Left" Height="33" Margin="555,130,0,0" VerticalAlignment="Top" Width="53" FontSize="17" RenderTransformOrigin="0.419,0.195"/>
+        <Label Content="Помилка 1-го роду:" HorizontalAlignment="Left" Height="44" Margin="374,179,0,0" VerticalAlignment="Top" Width="181" FontSize="16" FontFamily="Courier New" FontWeight="Bold"/>
+        <Label Content="Помилка 2-го роду:" HorizontalAlignment="Left" Height="44" Margin="374,210,0,0" VerticalAlignment="Top" Width="181" FontSize="16" FontFamily="Courier New" FontWeight="Bold"/>
+        <CheckBox x:Name="CHB" Content="Автор" HorizontalAlignment="Left" Margin="495,26,0,0" VerticalAlignment="Top" Checked="сhb_Checked"/>
+        <Label x:Name="P1" Content="" HorizontalAlignment="Left" Height="33" Margin="555,179,0,0" VerticalAlignment="Top" Width="53" FontSize="17" RenderTransformOrigin="0.419,0.195"/>
+        <Label x:Name="P2" Content="" HorizontalAlignment="Left" Height="33" Margin="555,209,0,0" VerticalAlignment="Top" Width="53" FontSize="17" RenderTransformOrigin="0.419,0.195"/>
+
+    </Grid>
+</Window>

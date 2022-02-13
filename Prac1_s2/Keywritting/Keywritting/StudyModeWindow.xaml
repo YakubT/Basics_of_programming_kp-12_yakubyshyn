@@ -1,0 +1,23 @@
+﻿<Window x:Class="Keywritting.StudyModeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Keywritting"
+        mc:Ignorable="d" Height="399" Width="366" Title="Вікно режиму навчання" Closed="Window_Closed" ResizeMode="NoResize" Background="#F022CAAF" WindowStartupLocation="CenterScreen">
+    <Grid Width="366" Margin="0,0,0,5">
+        <Label Content="Режим навчання" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Background="#00000000" FontSize="33" FontFamily="Times New Roman" FontWeight="Normal"/>
+        <Button Content="вийти з режиму" HorizontalAlignment="Center" Margin="0,286,0,27" Width="174" FontSize="20" Click="Button_Click"/>
+        <Label Content="Кодове слово:" HorizontalAlignment="Left" Height="35" Margin="10,63,0,0" VerticalAlignment="Top" Width="134" FontSize="18" FontStyle="Italic"/>
+        <Label Content="fyfnjksq" HorizontalAlignment="Left" Height="35" Margin="136,63,0,0" VerticalAlignment="Top" Width="134" FontSize="18" FontStyle="Italic" Foreground="#FFD3701A"/>
+        <TextBox x:Name="tb" HorizontalAlignment="Left" Margin="10,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="193" Height="36" FontSize="20" KeyDown="tb_KeyDown" KeyUp="tb_KeyUp" PreviewKeyDown="tb_PreviewKeyDown"/>
+        <Label x:Name="lab1" Content="Залишилось спроб: 3" HorizontalAlignment="Left" Height="35" Margin="10,103,0,0" VerticalAlignment="Top" Width="201" FontSize="18" FontStyle="Italic"/>
+        <Label Content="Кількість спроб:" HorizontalAlignment="Left" Height="35" Margin="10,228,0,0" VerticalAlignment="Top" Width="153" FontSize="18" FontStyle="Italic"/>
+        <ComboBox x:Name="cb" HorizontalAlignment="Center" Height="29" Margin="0,234,0,0" VerticalAlignment="Top" Width="56" SelectedIndex="0" FontSize="15" SelectionChanged="ComboBox_SelectionChanged">
+            <ListBoxItem Content="3" FontSize="15"/>
+            <ListBoxItem Content="5"/>
+            <ListBoxItem Content="10"/>
+        </ComboBox>
+
+    </Grid>
+</Window>

@@ -7,7 +7,21 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="ProtectionMode.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StudyModeWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ProtectionMode.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StudyModeWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -29,5 +29,19 @@ namespace Keywritting
         {
             Application.Current.Shutdown();
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            StudyModeWindow sm = new StudyModeWindow();
+            sm.Show();
+            Hide();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            ProtectionMode pm = new ProtectionMode();
+            pm.Show();
+            Hide();
+        }
     }
 }
