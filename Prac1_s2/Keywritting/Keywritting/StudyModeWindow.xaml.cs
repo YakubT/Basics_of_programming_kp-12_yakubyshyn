@@ -21,7 +21,7 @@ namespace Keywritting
     {
         int knt = 3;
         const int len = 8;
-        const string str = "fyfnjksq";
+        const string str = "jmnmzkck";
         List<List<double>> lmas;
         List <double> tmp;
         short f;

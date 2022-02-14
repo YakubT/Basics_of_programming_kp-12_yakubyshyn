@@ -21,7 +21,7 @@ namespace Keywritting
     public partial class ProtectionMode : Window
     {
         int knt;
-        const string str = "fyfnjksq";
+        const string str = "jmnmzkck";
         Stopwatch stopWatch = new Stopwatch();
         List<double> tmp= new List<double>();
         int f;

@@ -9,7 +9,7 @@
     <Grid>
         <Label Content="Режим перевірки" HorizontalAlignment="Center" Height="51" VerticalAlignment="Top" Width="264" FontSize="30" FontFamily="Comic Sans MS"/>
         <Label Content="Кодове слово:" HorizontalAlignment="Left" Height="35" Margin="16,51,0,0" VerticalAlignment="Top" Width="134" FontSize="18" FontStyle="Italic"/>
-        <Label Content="fyfnjksq" HorizontalAlignment="Left" Height="35" Margin="142,51,0,0" VerticalAlignment="Top" Width="134" FontSize="18" FontStyle="Italic" Foreground="#FFD31A2E"/>
+        <Label Content="jmnmzkck" HorizontalAlignment="Left" Height="35" Margin="142,51,0,0" VerticalAlignment="Top" Width="134" FontSize="18" FontStyle="Italic" Foreground="#FFD31A2E"/>
         <Label Content="К-сть спроб:" HorizontalAlignment="Left" Height="35" Margin="16,86,0,0" VerticalAlignment="Top" Width="134" FontSize="18" FontStyle="Italic"/>
         <ComboBox x:Name="CB" HorizontalAlignment="Left" Height="30" Margin="150,88,0,0" VerticalAlignment="Top" Width="42" SelectedIndex="0" SelectionChanged="ComboBox_SelectionChanged">
             <ListBoxItem Content="5"/>
