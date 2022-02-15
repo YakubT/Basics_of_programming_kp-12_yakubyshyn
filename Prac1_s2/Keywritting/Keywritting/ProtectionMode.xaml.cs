@@ -204,7 +204,7 @@ namespace Keywritting
                 TB2.Text = "";
             if (f==1)
             {
-                if (proc > 0.8)
+                if (proc > 0.85)
                     MessageBox.Show("Вдала спроба (автентифікація пройшла)");
                 else
                     MessageBox.Show("Невдала спроба (автентифікація не пройшла)");
