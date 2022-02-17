@@ -21,9 +21,11 @@ namespace Lab1_s2
         public Interface(int num)
         {
             w = new Window();
+            
             switch (num)
             {
                 case 2:
+                    w.Name = "w2";
                     w.Title = "Вікно №2";
                     w.Height = 479;
                     w.Width = 800;
@@ -31,6 +33,7 @@ namespace Lab1_s2
                     w.WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
                     w.Background = Brushes.White;
                     Grid gr = new Grid();
+                    gr.Name = "gr";
                     gr.Width = 800;
                     gr.Height = 463.04;
                     gr.HorizontalAlignment = HorizontalAlignment.Stretch;
@@ -98,6 +101,7 @@ namespace Lab1_s2
                     gr.Children.Add(b2);
                     Button b3 = new Button();
                     b3.Content = "На головне вікно (№1)";
+                    b3.Name = "b3";
                     b3.Width = 235;
                     b3.Height = 93;
                     b3.HorizontalAlignment = HorizontalAlignment.Left;

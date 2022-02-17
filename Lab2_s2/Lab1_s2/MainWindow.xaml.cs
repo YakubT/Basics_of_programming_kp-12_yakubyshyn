@@ -25,11 +25,20 @@ namespace Lab1_s2
             InitializeComponent();
         }
 
+        public void close2(object sender,RoutedEventArgs e)
+        {
+            Button b = (Button)sender;
+            this.Hide();
+            MainWindow mw = new MainWindow();
+            mw.Show();
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //Hide();
+            Hide();
             Interface Inter = new Interface(2);
             Window w = Inter.Get_Window();
+            Logic l = new Logic();
+            l.SetLogic(w);
             w.Show();
         }
 
