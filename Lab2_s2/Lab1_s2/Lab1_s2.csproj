@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>teacher_man_user_avatar_school_icon_209258.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="200x200bb.jpg" />
+    <None Remove="div.png" />
+    <None Remove="pic.png" />
+    <None Remove="кальк.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="200x200bb.jpg" />
+    <Resource Include="div.png" />
+    <Resource Include="pic.png" />
+    <Resource Include="кальк.png" />
+  </ItemGroup>
+
+</Project>
