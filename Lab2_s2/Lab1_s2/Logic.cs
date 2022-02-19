@@ -143,25 +143,35 @@ namespace Lab1_s2
         {
             System.Windows.Application.Current.Shutdown();
         }
+        private void setting2()
+        {
+            Grid g = (Grid)w.Content;
+            Button[] bmas = new Button[4];
+            foreach (Button b in g.Children.OfType<Button>())
+            {
+                bmas[int.Parse(b.Name.Substring(1))] = b;
+
+            }
+            bmas[1].Click += b1clw2;
+            bmas[2].Click += bclw2;
+            bmas[3].Click += w2close;
+            w.Closed += Window_Closed;
+        }
+        private void setting3()
+        {
+
+        }
         public void SetLogic(Window w)
         {
             this.w = w;
             switch (w.Name)
             {
                 case "w2":
-                    Grid g =(Grid) w.Content;
-                    Button[] bmas= new Button[4];
-                    foreach (Button b in g.Children.OfType<Button>())
-                    {
-                        bmas[int.Parse(b.Name.Substring(1))] = b; 
-
-                    }
-                    bmas[1].Click += b1clw2;
-                    bmas[2].Click += bclw2;
-                    bmas[3].Click += w2close;
-                    w.Closed += Window_Closed;
+                    setting2();
                     break;
-                    
+                case "w3":
+                    setting3();
+                    break;
             }
         }
     }

@@ -45,7 +45,9 @@ namespace Lab1_s2
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Hide();
-            
+            Interface Inter = new Interface(3);
+            Window w = Inter.Get_Window();
+            w.Show();
           
         }
 
