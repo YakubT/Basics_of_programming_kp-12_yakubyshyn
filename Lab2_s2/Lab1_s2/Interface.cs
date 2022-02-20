@@ -156,6 +156,7 @@ w.Content = gr;
                 {
                     ComboBox cb = new ComboBox();
                     cb.Name = "CB"+((i - 1) * 5 + j).ToString();
+                    cb.FontWeight = FontWeights.Bold;
                     ListBoxItem l1 = new ListBoxItem();
                     l1.Content = "X";
                     l1.Foreground = Brushes.Red;

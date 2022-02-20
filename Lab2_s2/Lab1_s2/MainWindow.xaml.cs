@@ -47,6 +47,8 @@ namespace Lab1_s2
             Hide();
             Interface Inter = new Interface(3);
             Window w = Inter.Get_Window();
+            Logic l = new Logic();
+            l.SetLogic(w);
             w.Show();
           
         }
