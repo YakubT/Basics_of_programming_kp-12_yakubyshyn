@@ -56,13 +56,21 @@ namespace Lab1_s2
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             Hide();
-           
+            Interface Inter = new Interface(4);
+            Window w = Inter.Get_Window();
+           Logic l = new Logic();
+            l.SetLogic(w);
+            w.Show();
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
             Hide();
-            
+            Interface Inter = new Interface(5);
+            Window w = Inter.Get_Window();
+            Logic l = new Logic();
+            l.SetLogic(w);
+            w.Show();
         }
 
         private void Window_Closed(object sender, EventArgs e)

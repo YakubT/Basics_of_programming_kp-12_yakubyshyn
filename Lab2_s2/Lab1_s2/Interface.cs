@@ -197,6 +197,226 @@ w.Content = gr;
             g.Children.Add(exitButton2);
             w.Content = g;
         }
+        private void setting4()
+        {
+            w.Name = "w4";
+            w.Title = "Вікно №4";
+            w.Height = 450;
+            w.Width = 800;
+            w.ResizeMode = System.Windows.ResizeMode.NoResize;
+            w.WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
+            Grid g = new Grid();
+            Image image = new Image();
+            //MessageBox.Show(System.Reflection.Assembly.GetExecutingAssembly().Location.Substring(0, System.Reflection.Assembly.GetExecutingAssembly().Location.Length-11));
+            image.Source = new BitmapImage(new Uri(System.Reflection.Assembly.GetExecutingAssembly().Location.Substring(0, System.Reflection.Assembly.GetExecutingAssembly().Location.Length - 11) + "//200x200bb.jpg"));
+            ImageBrush myBrush = new ImageBrush();
+            myBrush.ImageSource = image.Source;
+            g.Background  = myBrush;
+            g.Width = 800;
+            g.Height = 434.04;
+            Image im = new Image();
+            im.Width = 312;
+            im.Height = 345;
+            im.VerticalAlignment = VerticalAlignment.Top;
+            im.HorizontalAlignment = HorizontalAlignment.Left;
+            im.Margin = new Thickness(50,48,0,0);
+            im.Source = new BitmapImage(new Uri(System.Reflection.Assembly.GetExecutingAssembly().Location.Substring(0, System.Reflection.Assembly.GetExecutingAssembly().Location.Length - 11) + "//кальк.png"));
+            im.Name = "im";
+            g.Children.Add(im);
+            Label label1 = new Label();
+            label1.Name = "label1";
+            label1.Content = "0";
+            label1.FontSize = 40;
+            label1.HorizontalContentAlignment = HorizontalAlignment.Right;
+            label1.HorizontalAlignment = HorizontalAlignment.Left;
+            label1.VerticalAlignment = VerticalAlignment.Top;
+            label1.Width = 312;
+            label1.Height = 72;
+            label1.Margin = new Thickness(50, 69, 0, 0);
+            g.Children.Add(label1);
+            for (int i=1;i<10;i++)
+            {
+                Button b = new Button();
+                Thickness tmp = new Thickness(77 * ((i - 1) % 3) + im.Margin.Left, (((10 - i) - 1) / 3) * 51 + 190, 0, 0);
+                b.Name = "B" + i.ToString();
+                b.Margin = tmp;
+                b.Width = 77;
+                b.Height = 51;
+                b.Content = i.ToString();
+                b.VerticalAlignment = VerticalAlignment.Top;
+                b.HorizontalAlignment = HorizontalAlignment.Left;
+                b.Background = Brushes.White;
+                g.Children.Add(b);
+            }
+            Button b0 = new Button();
+            b0.Name = "B0";
+            b0.Margin = new Thickness(77 + im.Margin.Left, 3 * 51 + 190, 0, 0);
+            b0.Width = 77;
+            b0.Height = 51;
+            b0.Content = "0";
+            b0.VerticalAlignment = VerticalAlignment.Top;
+            b0.HorizontalAlignment = HorizontalAlignment.Left;
+            b0.Background = Brushes.White;
+            g.Children.Add(b0);
+            b0 = new Button();
+            b0.Name = "B10";
+            b0.Margin = new Thickness(77 * 2 + im.Margin.Left, 3 * 51 + 190, 0, 0);
+            b0.Width = 77;
+            b0.Height = 51;
+            b0.Content = ",";
+            b0.VerticalAlignment = VerticalAlignment.Top;
+            b0.HorizontalAlignment = HorizontalAlignment.Left;
+            b0.Background = Brushes.White;
+            g.Children.Add(b0);
+            b0 = new Button();
+            b0.Name = "change_znak";
+            b0.VerticalAlignment = VerticalAlignment.Top;
+            b0.HorizontalAlignment = HorizontalAlignment.Left;
+            b0.Content = "+/-";
+            b0.Width = 77;
+            b0.Height = 52;
+            b0.Margin = new Thickness(50,342,0,0);
+            b0.Background = Brushes.White;
+            g.Children.Add(b0);
+
+            b0 = new Button();
+            b0.Name = "eq";
+            b0.VerticalAlignment = VerticalAlignment.Top;
+            b0.HorizontalAlignment = HorizontalAlignment.Left;
+            b0.Content = "=";
+            b0.Width = 77;
+            b0.Height = 51;
+            b0.Margin = new Thickness(125, 139, 0, 0);
+            b0.Background = new SolidColorBrush(Color.FromRgb(232,178,0));
+            g.Children.Add(b0);
+
+            b0 = new Button();
+            b0.Name = "clear";
+            b0.VerticalAlignment = VerticalAlignment.Top;
+            b0.HorizontalAlignment = HorizontalAlignment.Left;
+            b0.Content = "C";
+            b0.Width = 77;
+            b0.Height = 51;
+            b0.Margin = new Thickness(202, 139, 0, 0);
+            b0.Background = new SolidColorBrush(Color.FromRgb(244, 244, 244));
+            g.Children.Add(b0);
+
+            b0 = new Button();
+            b0.Name = "BackspaceB";
+            b0.VerticalAlignment = VerticalAlignment.Top;
+            b0.HorizontalAlignment = HorizontalAlignment.Left;
+            image = new Image();
+            image.Source = new BitmapImage(new Uri(System.Reflection.Assembly.GetExecutingAssembly().Location.Substring(0, System.Reflection.Assembly.GetExecutingAssembly().Location.Length - 11) + "//pic.png"));
+            myBrush = new ImageBrush();
+            myBrush.ImageSource = image.Source;
+            b0.Width = 83;
+            b0.Height = 51;
+            b0.Margin = new Thickness(279, 139, 0, 0);
+            myBrush.TileMode = TileMode.None;
+            myBrush.Stretch =Stretch.Fill;
+            b0.Background = myBrush;
+            g.Children.Add(b0);
+            b0 = new Button();
+
+            b0.Name = "div";
+            b0.VerticalAlignment = VerticalAlignment.Top;
+            b0.HorizontalAlignment = HorizontalAlignment.Left;
+            image = new Image();
+            image.Source = new BitmapImage(new Uri(System.Reflection.Assembly.GetExecutingAssembly().Location.Substring(0, System.Reflection.Assembly.GetExecutingAssembly().Location.Length - 11) + "//div.png"));
+            myBrush = new ImageBrush();
+            myBrush.ImageSource = image.Source;
+            b0.Width = 83;
+            b0.Height = 51;
+            b0.Margin = new Thickness(279, 190, 0, 0);
+            myBrush.TileMode = TileMode.None;
+            myBrush.Stretch = Stretch.Fill;
+            b0.Background = myBrush;
+            g.Children.Add(b0);
+            
+            b0 = new Button();
+            b0.Name = "mul";
+            b0.VerticalAlignment = VerticalAlignment.Top;
+            b0.HorizontalAlignment = HorizontalAlignment.Left;
+            b0.Content = "x";
+            b0.FontSize = 16;
+            b0.Width = 83;
+            b0.Height = 51;
+            b0.Margin = new Thickness(279, 240, 0, 0);
+            b0.Background = new SolidColorBrush(Color.FromRgb(244, 244, 244));
+            g.Children.Add(b0);
+            w.Content = g;
+
+            b0 = new Button();
+            b0.Name = "minus";
+            b0.VerticalAlignment = VerticalAlignment.Top;
+            b0.HorizontalAlignment = HorizontalAlignment.Left;
+            b0.Content = "-";
+            b0.FontSize = 20;
+            b0.Width = 83;
+            b0.Height = 51;
+            b0.Margin = new Thickness(279, 291, 0, 0);
+            b0.Background = new SolidColorBrush(Color.FromRgb(244, 244, 244));
+            g.Children.Add(b0);
+            w.Content = g;
+
+            b0 = new Button();
+            b0.Name = "plus";
+            b0.VerticalAlignment = VerticalAlignment.Top;
+            b0.HorizontalAlignment = HorizontalAlignment.Left;
+            b0.Content = "+";
+            b0.FontSize = 20;
+            b0.Width = 83;
+            b0.Height = 52;
+            b0.Margin = new Thickness(279, 342, 0, 0);
+            b0.Background = new SolidColorBrush(Color.FromRgb(244, 244, 244));
+            g.Children.Add(b0);
+            
+            b0 = new Button();
+            b0.Name = "exit";
+            b0.VerticalAlignment = VerticalAlignment.Top;
+            b0.HorizontalAlignment = HorizontalAlignment.Left;
+            b0.Content = "На головне вікно (№1)";
+            b0.FontSize = 22;
+            b0.Width = 235;
+            b0.Height = 93;
+            b0.Margin = new Thickness(542, 315, 0, 0);
+            b0.Background = new SolidColorBrush(Color.FromRgb(244, 244, 244));
+            g.Children.Add(b0);
+            b0 = new Button();
+            w.Content = g;
+        }
+        private void setting5()
+        {
+            w.Name = "w5";
+            w.Title = "Вікно №5";
+            w.Height = 450;
+            w.Width = 826;
+            w.ResizeMode = System.Windows.ResizeMode.NoResize;
+            w.WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
+            w.Background = Brushes.AliceBlue;
+            Grid g = new Grid();
+            Label lb = new Label();
+            lb.Name = "lb";
+            lb.Width = 780;
+            lb.Height = 259;
+            lb.FontSize = 20;
+            lb.VerticalAlignment = VerticalAlignment.Top;
+            lb.HorizontalAlignment = HorizontalAlignment.Left;
+            lb.Margin = new Thickness(0, 23, 0, 0);
+            g.Children.Add(lb);
+            Button b = new Button();
+            b.Name = "exit";
+            b.VerticalAlignment = VerticalAlignment.Top;
+            b.HorizontalAlignment = HorizontalAlignment.Left;
+            b.Content = "На головне вікно (№1)";
+            b.FontSize = 22;
+            b.Width = 235;
+            b.Height = 93;
+            b.Margin = new Thickness(542, 315, 0, 0);
+            b.Background = new SolidColorBrush(Color.FromRgb(244, 244, 244));
+            g.Children.Add(b);
+            w.Content = g;
+        }
         public Interface(int num)
         {
             w = new Window();
@@ -208,6 +428,12 @@ w.Content = gr;
                     break;
                 case 3:
                     setting3();
+                    break;
+                case 4:
+                    setting4();
+                    break;
+                case 5:
+                    setting5();
                     break;
             }
         }

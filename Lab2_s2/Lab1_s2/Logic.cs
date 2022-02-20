@@ -1102,10 +1102,276 @@ namespace Lab1_s2
                 make_step(true);
             }
         }
+        // функції для калькулятора
+       
+        char type = '+';
+        bool cl = false;
+        double mem = 0;
+        bool input = false;
+        private Label findl (string s)
+        {
+            Grid g = (Grid)w.Content;
+            foreach (Label t in g.Children.OfType<Label>())
+                if (t.Name == s)
+                    return t;
+            return new Label();
+        }
+        private void Bcl(object sender, EventArgs e)
+        {
+            input = true;
+            if ((string)findl("label1").Content == "0" || cl == true || (string)findl("label1").Content == "Incorrect data")
+                findl("label1").Content = "";
+            Button b = (Button)sender;
+            findl("label1").Content += b.Name.Substring(1);
+            cl = false;
+        }
+        private void comaclick(object sender, EventArgs e)
+        {
+
+            if (!findl("label1").Content.ToString().Contains(','))
+                findl("label1").Content += ",";
+
+        }
+        private void comaclick()
+        {
+
+            if (!findl("label1").Content.ToString().Contains(','))
+                findl("label1").Content += ",";
+
+        }
+
+      
+        
+
+        private void Window_KeyUp(object sender, KeyEventArgs e)
+        {
+            char c = (char)e.Key;
+            if (((int)c >= 34) && ((int)c <= 43))
+            {
+                input = true;
+                if ((string)findl("label1").Content == "0" || cl == true || (string)findl("label1").Content == "Incorrect data")
+                    findl("label1").Content = "";
+                c = (char)((int)c - 34 + 48);
+                findl("label1").Content += c.ToString();
+                cl = false;
+            }
+            if ((int)c == 142)
+                comaclick();
+        }
+
+        private void Backspaceb_Click(object sender, RoutedEventArgs e)
+        {
+            findl("label1").Content = findl("label1").Content.ToString().Substring(0, findl("label1").Content.ToString().Length - 1);
+            if ((string)findl("label1").Content == "")
+                findl("label1").Content = "0";
+        }
+
+        private void clear_Click(object sender, RoutedEventArgs e)
+        {
+            mem = 0;
+            type = '+';
+            findl("label1").Content = "0";
+            input = false;
+        }
+
+        private void div_Click(object sender, RoutedEventArgs e)
+        {
+            if (input)
+            {
+                switch (type)
+                {
+                    case '+':
+                        findl("label1").Content = Math.Round(Convert.ToDouble(findl("label1").Content.ToString()) + mem, 7).ToString();
+                        break;
+                    case '-':
+                        findl("label1").Content = Math.Round(mem - Convert.ToDouble(findl("label1").Content.ToString()), 7).ToString();
+                        break;
+                    case '/':
+                        if (Math.Abs(Convert.ToDouble(findl("label1").Content.ToString())) < 0.00000001)
+                            findl("label1").Content = "Incorrect data";
+                        else
+                            findl("label1").Content = Math.Round(mem / Convert.ToDouble(findl("label1").Content.ToString()), 7).ToString();
+                        break;
+                    case '*':
+                        findl("label1").Content = Math.Round((Convert.ToDouble(findl("label1").Content.ToString()) * mem), 7).ToString();
+                        break;
+                }
+                if ((string)findl("label1").Content == "Incorrect data")
+                {
+                    type = '+';
+                    input = false;
+                    mem = 0;
+                    return;
+                }
+                mem = Convert.ToDouble(findl("label1").Content.ToString());
+                cl = true;
+                type = '/';
+                input = false;
+            }
+        }
+
+        private void mul_Click(object sender, RoutedEventArgs e)
+        {
+            if (input)
+            {
+                switch (type)
+                {
+                    case '+':
+                        findl("label1").Content = Math.Round(Convert.ToDouble(findl("label1").Content.ToString()) + mem, 7).ToString();
+                        break;
+                    case '-':
+                        findl("label1").Content = Math.Round(mem - Convert.ToDouble(findl("label1").Content.ToString()), 7).ToString();
+                        break;
+                    case '/':
+                        if (Math.Abs(Convert.ToDouble(findl("label1").Content.ToString())) < 0.00000001)
+                            findl("label1").Content = "Incorrect data";
+                        else
+                            findl("label1").Content = Math.Round(mem / Convert.ToDouble(findl("label1").Content.ToString()), 7).ToString();
+                        break;
+                    case '*':
+                        findl("label1").Content = Math.Round((Convert.ToDouble(findl("label1").Content.ToString()) * mem), 7).ToString();
+                        break;
+                }
+                if ((string)findl("label1").Content == "Incorrect data")
+                {
+                    type = '+';
+                    input = false;
+                    mem = 0;
+                    return;
+                }
+                mem = Convert.ToDouble(findl("label1").Content.ToString());
+                cl = true;
+                type = '*';
+                input = false;
+            }
+        }
+
+        private void minus_Click(object sender, RoutedEventArgs e)
+        {
+            if (input)
+            {
+                switch (type)
+                {
+                    case '+':
+                        findl("label1").Content = Math.Round(Convert.ToDouble(findl("label1").Content.ToString()) + mem, 7).ToString();
+                        break;
+                    case '-':
+                        findl("label1").Content = Math.Round(mem - Convert.ToDouble(findl("label1").Content.ToString()), 7).ToString();
+                        break;
+                    case '/':
+                        if (Math.Abs(Convert.ToDouble(findl("label1").Content.ToString())) < 0.00000001)
+                            findl("label1").Content = "Incorrect data";
+                        else
+                            findl("label1").Content = Math.Round(mem / Convert.ToDouble(findl("label1").Content.ToString()), 7).ToString();
+                        break;
+                    case '*':
+                        findl("label1").Content = Math.Round((Convert.ToDouble(findl("label1").Content.ToString()) * mem), 7).ToString();
+                        break;
+                }
+                if ((string)findl("label1").Content == "Incorrect data")
+                {
+                    type = '+';
+                    input = false;
+                    mem = 0;
+                    return;
+                }
+                mem = Convert.ToDouble(findl("label1").Content.ToString());
+                cl = true;
+                type = '-';
+                input = false;
+            }
+        }
+
+        private void plus_Click(object sender, RoutedEventArgs e)
+        {
+            if (input)
+            {
+                switch (type)
+                {
+                    case '+':
+                        findl("label1").Content = Math.Round(Convert.ToDouble(findl("label1").Content.ToString()) + mem, 7).ToString();
+                        break;
+                    case '-':
+                        findl("label1").Content = Math.Round(mem - Convert.ToDouble(findl("label1").Content.ToString()), 7).ToString();
+                        break;
+                    case '/':
+                        if (Math.Abs(Convert.ToDouble(findl("label1").Content.ToString())) < 0.00000001)
+                            findl("label1").Content = "Incorrect data";
+                        else
+                            findl("label1").Content = Math.Round(mem / Convert.ToDouble(findl("label1").Content.ToString()), 7).ToString();
+                        break;
+                    case '*':
+                        findl("label1").Content = Math.Round((Convert.ToDouble(findl("label1").Content.ToString()) * mem), 7).ToString();
+                        break;
+                }
+                if ((string)findl("label1").Content == "Incorrect data")
+                {
+                    type = '+';
+                    input = false;
+                    mem = 0;
+                    return;
+                }
+                mem = Convert.ToDouble(findl("label1").Content.ToString());
+                cl = true;
+                type = '+';
+                input = false;
+            }
+        }
+
+        private void eq_Click(object sender, RoutedEventArgs e)
+        {
+            if (input)
+            {
+                switch (type)
+                {
+                    case '+':
+                        findl("label1").Content = Math.Round(Convert.ToDouble(findl("label1").Content.ToString()) + mem, 7).ToString();
+                        break;
+                    case '-':
+                        findl("label1").Content = Math.Round(mem - Convert.ToDouble(findl("label1").Content.ToString()), 7).ToString();
+                        break;
+                    case '/':
+                        if (Math.Abs(Convert.ToDouble(findl("label1").Content.ToString())) < 0.00000001)
+                            findl("label1").Content = "Incorrect data";
+                        else
+                            findl("label1").Content = Math.Round(mem / Convert.ToDouble(findl("label1").Content.ToString()), 7).ToString();
+                        break;
+                    case '*':
+                        findl("label1").Content = Math.Round((Convert.ToDouble(findl("label1").Content.ToString()) * mem), 7).ToString();
+                        break;
+                }
+                if ((string)findl("label1").Content == "Incorrect data")
+                {
+                    type = '+';
+                    input = false;
+                    mem = 0;
+                    return;
+                }
+            }
+            type = '+';
+            mem = 0;
+            cl = true;
+            input = true;
+        }
+
+        private void change_znak_Click(object sender, RoutedEventArgs e)
+        {
+            
+            if ((string)findl("label1").Content != "0" && (string)findl("label1").Content != "Incorrect data")
+            {
+                string tmp = (string)findl("label1").Content;
+                if (tmp[0] == '-')
+                    tmp = tmp.Substring(1);
+                else
+                    tmp = '-' + tmp;
+                findl("label1").Content = tmp;
+            }
+        }
+
         private void setting3()
         {
             Grid g = (Grid)w.Content;
-            
+
             foreach (ComboBox ch in g.Children.OfType<ComboBox>())
             {
                 ch.DropDownClosed += CommonCBchoose;
@@ -1117,6 +1383,37 @@ namespace Lab1_s2
             b.Click += Button_Click_1;
 
         }
+        private void setting4()
+        {
+            Grid g = (Grid)w.Content;
+            Button b = findBut("exit");
+            b.Click += wclose;
+            w.Closed += Window_Closed;
+            w.KeyUp += Window_KeyUp;
+            findBut("minus").Click += minus_Click;
+            findBut("div").Click += div_Click;
+            findBut("mul").Click += mul_Click;
+            findBut("eq").Click += eq_Click;
+            findBut("plus").Click += plus_Click;
+            w.Closed += Window_Closed;
+            for (int i=0;i<=9;i++)
+            {
+                findBut("B" + i.ToString()).Click += Bcl;
+            }
+            findBut("B10").Click += comaclick;
+            findBut("BackspaceB").Click += Backspaceb_Click;
+            findBut("clear").Click += clear_Click;
+            findBut("change_znal").Click += change_znak_Click;
+        }
+        private void setting5()
+        {
+            Grid g = (Grid)w.Content;
+            Button b = findBut("exit");
+            b.Click += wclose;
+            w.Closed += Window_Closed;
+            findl("lb").Content = "Відомості про розробника: \n Якубишин Анатолій Сергійович, група КП-12, рік створення - 2022";
+ 
+        }
         public void SetLogic(Window w)
         {
             this.w = w;
@@ -1127,6 +1424,12 @@ namespace Lab1_s2
                     break;
                 case "w3":
                     setting3();
+                    break;
+                case "w4":
+                    setting4();
+                    break;
+                case "w5":
+                    setting5();
                     break;
             }
         }
