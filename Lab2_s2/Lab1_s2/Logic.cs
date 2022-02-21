@@ -980,7 +980,7 @@ namespace Lab1_s2
                     {
                         cb.IsEnabled = false;
                     }
-                    MessageBox.Show("Нажаль ви програли");
+                    MessageBox.Show("На жаль, Ви програли");
                     return;
 
                 }
@@ -1057,7 +1057,7 @@ namespace Lab1_s2
                     {
                         cb.IsEnabled = false;
                     }
-                    MessageBox.Show("Нажаль ви програли");
+                    MessageBox.Show("На жаль, Ви програли");
                     return;
 
                 }
