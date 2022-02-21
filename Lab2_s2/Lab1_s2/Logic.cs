@@ -284,9 +284,9 @@ namespace Lab1_s2
 
                 //MessageBox.Show(nearfork(op,arr).ToString());
                 if (type)
-                    return 500 + nearfork(op, arr);
+                    return 800 + nearfork(op, arr);
                 else
-                    return 10 - nearfork(op, arr);
+                    return 200 - nearfork(op, arr);
             }
 
 
@@ -334,11 +334,11 @@ namespace Lab1_s2
             {
 
                 if (res2 < 0.000001)
-                    oc = res1 * 100;
+                    oc = res1 * 200;
                 else
-                    oc = res1 / res2 * 100;
+                    oc = res1 / res2 * 200;
 
-                oc = Math.Min(oc, 499);
+                oc = Math.Min(oc, 800);
             }
             else
             {
@@ -346,10 +346,10 @@ namespace Lab1_s2
                 // MessageBox.Show(res2.ToString());
 
                 if (res1 < 0.000001)
-                    oc = 1.0 / res2 * 100;
+                    oc = 1.0 / res2 * 200;
                 else
-                    oc = res1 / res2 * 100;
-                oc = Math.Min(oc, 499);
+                    oc = res1 / res2 * 200;
+                oc = Math.Min(oc, 800);
             }
             //MessageBox.Show(res1.ToString()+" "+res2.ToString());
             // MessageBox.Show(oc.ToString());
