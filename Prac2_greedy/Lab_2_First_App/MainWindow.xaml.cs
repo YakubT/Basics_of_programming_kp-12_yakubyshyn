@@ -108,8 +108,10 @@ namespace Lab_2_First_App
 
             PointCount = Convert.ToInt32(item.Content);
             InitPoints();
-           
-           
+            MyCanvas.Children.Clear();
+            Plotway();
+            PlotPoints();
+
         }
         
         private double len(int i,int j)
@@ -128,6 +130,8 @@ namespace Lab_2_First_App
                 double lentmp = int.MaxValue;
                 for (int i=0;i<PointCount;i++)
                 {
+                    if (hs.Count!=PointCount-1 && (i == 0))
+                        continue;
                     if (!hs.Contains(i) && len(potpoint,i)<lentmp)
                     {
                         tmp = i;
@@ -147,7 +151,7 @@ namespace Lab_2_First_App
                 Plotway();
                 PlotPoints();
                 if (hs.Count == PointCount)
-                    MessageBox.Show("Шлях побудований, його довжина = " + s.ToString());
+                    MessageBox.Show("Шлях побудований, його довжина = " + Math.Round(s,3).ToString());
             }
 
 
