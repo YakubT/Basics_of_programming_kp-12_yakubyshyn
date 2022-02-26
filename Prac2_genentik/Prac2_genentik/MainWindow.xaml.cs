@@ -175,7 +175,7 @@ namespace Prac2_genentik
         }
         private void OneStep(object sender, EventArgs e)
         {
-           // MessageBox.Show(countit.ToString());
+            // MessageBox.Show(countit.ToString());
             if (countit != 0)
             {
 
@@ -192,7 +192,7 @@ namespace Prac2_genentik
                     s = Lpop[i][0].ToString();
                     for (int j = 1; j < PointCount; j++)
                         s += " " + Lpop[i][j].ToString();
-                    odbor.Add(new Tuple <double, string>(len(Lpop[i]),s));
+                    odbor.Add(new Tuple<double, string>(len(Lpop[i]), s));
                 }
                 odbor.Sort();
                 Lpop.Clear();
@@ -206,10 +206,12 @@ namespace Prac2_genentik
                 }
                 //MessageBox.Show(Lpop[0].Count().ToString());
                 //for (int i = 0; i < Lpop[0].Count; i++)
-                   // MessageBox.Show(Lpop[0][i].ToString());
+                // MessageBox.Show(Lpop[0][i].ToString());
                 PlotWay(Lpop[0]);
                 countit--;
                 lb.Content = len(Lpop[0]).ToString();
+                if (countit == 0)
+                    MessageBox.Show("Пошук закінчений");
             }
         }
         private void PlotWay(List<int> BestWay)
