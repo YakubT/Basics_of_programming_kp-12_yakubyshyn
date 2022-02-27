@@ -55,8 +55,8 @@ namespace Prac2_genentik
             {
                 Point p = new Point();
 
-                p.X = rnd.Next(Radius, (int)(0.75 * MyCanvas.Width) - 3 * Radius);
-                p.Y = rnd.Next(Radius, (int)(0.90 * MyCanvas.Height - 3 * Radius));
+                p.X = rnd.Next(Radius, (int)(MyCanvas.Width) - 3 * Radius);
+                p.Y = rnd.Next(Radius, (int)( MyCanvas.Height - 3 * Radius));
                 pC.Add(p);
             }
 
