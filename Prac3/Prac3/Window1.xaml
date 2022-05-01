@@ -8,40 +8,40 @@
         Title="Режим адміністратора" Height="473.1" Width="800" WindowStartupLocation="CenterScreen" Closed="adminwind_Closed">
     <Grid x:Name="myGrid">
         <Label Content="Введіть пароль адміністратора" HorizontalAlignment="Left" Margin="25,28,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <TextBox x:Name="paradmin" HorizontalAlignment="Left" Height="28" Margin="25,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" FontSize="15"/>
         <Button Content="Авторизуватися" HorizontalAlignment="Left" Height="25" Margin="25,105,0,0" VerticalAlignment="Top" Width="206" FontSize="14" Click="Button_Click_1"/>
         <Label Content="Перегляд користувачів за списком" HorizontalAlignment="Left" Margin="25,155,0,0" VerticalAlignment="Top" FontSize="14" IsEnabled="False"/>
         <DataGrid x:Name="Dgrid" HorizontalAlignment="Left" Height="199" Margin="25,189,0,0" VerticalAlignment="Top" Width="206" IsEnabled="False"/>
         <Label Content="Зміна парою адміністратора" HorizontalAlignment="Left" Margin="432,28,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" IsEnabled="False"/>
         <Label Content="Введіть поточний пароль" HorizontalAlignment="Left" Margin="337,62,0,0" VerticalAlignment="Top" FontSize="14" IsEnabled="False"/>
         <Label Content="Введіть новий пароль" HorizontalAlignment="Left" Margin="551,62,0,0" VerticalAlignment="Top" FontSize="14" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="28" Margin="337,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" FontSize="15" IsEnabled="False"/>
-        <TextBox x:Name="tbnewpar1" HorizontalAlignment="Left" Height="28" Margin="551,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" FontSize="15" IsEnabled="False"/>
         <Label Content="Повторіть пароль" HorizontalAlignment="Left" Margin="337,135,0,0" VerticalAlignment="Top" FontSize="14" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="28" Margin="465,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" FontSize="15" IsEnabled="False"/>
         <Button Content="Оновити" HorizontalAlignment="Left" Height="25" Margin="669,137,0,0" VerticalAlignment="Top" Width="108" FontSize="14" IsEnabled="False" Click="Button_Click_2"/>
         <Label Content="Перегляд кожного користувача" HorizontalAlignment="Left" Margin="319,179,0,0" VerticalAlignment="Top" FontSize="14" IsEnabled="False"/>
         <Label Content="Ім'я користувача" HorizontalAlignment="Left" Margin="319,207,0,0" VerticalAlignment="Top" FontSize="14" IsEnabled="False"/>
         <Label Content="Прізвище користувача" HorizontalAlignment="Left" Margin="319,241,0,0" VerticalAlignment="Top" FontSize="14" IsEnabled="False"/>
         <Label Content="Логін" HorizontalAlignment="Left" Margin="557,207,0,0" VerticalAlignment="Top" FontSize="14" RenderTransformOrigin="0.549,0.451" IsEnabled="False"/>
         <Label Content="Статус" HorizontalAlignment="Left" Margin="557,241,0,0" VerticalAlignment="Top" FontSize="14" RenderTransformOrigin="0.549,0.451" IsEnabled="False"/>
-        <Label x:Name="Name" Content="" HorizontalAlignment="Left" Margin="483,207,0,0" VerticalAlignment="Top" FontSize="14" RenderTransformOrigin="0.549,0.451"/>
+        <Label x:Name="Name_of_person" Content="" HorizontalAlignment="Left" Margin="483,207,0,0" VerticalAlignment="Top" FontSize="14" RenderTransformOrigin="0.549,0.451"/>
         <Label x:Name="Surname" Content="" HorizontalAlignment="Left" Margin="484,241,0,0" VerticalAlignment="Top" FontSize="14" RenderTransformOrigin="0.549,0.451"/>
-        <Label x:Name="Surname_Copy" Content="" HorizontalAlignment="Left" Margin="607,207,0,0" VerticalAlignment="Top" FontSize="14" RenderTransformOrigin="0.508,0.451"/>
+        <Label x:Name="Login" Content="" HorizontalAlignment="Left" Margin="607,207,0,0" VerticalAlignment="Top" FontSize="14" RenderTransformOrigin="0.508,0.451"/>
         <Label x:Name="Status" Content="" HorizontalAlignment="Left" Margin="609,241,0,0" VerticalAlignment="Top" FontSize="14" RenderTransformOrigin="0.383,0.451"/>
         <Label Content="Обмеження на пароль" HorizontalAlignment="Left" Margin="429,270,0,0" VerticalAlignment="Top" FontSize="14" IsEnabled="False"/>
-        <Label x:Name="Status_Copy" Content="" HorizontalAlignment="Left" Margin="591,270,0,0" VerticalAlignment="Top" FontSize="14" RenderTransformOrigin="0.539,0.59"/>
-        <Button Content="Попередній" HorizontalAlignment="Left" Height="24" Margin="316,273,0,0" VerticalAlignment="Top" Width="105" IsEnabled="False"/>
-        <Button Content="Наступний" HorizontalAlignment="Left" Height="24" Margin="637,273,0,0" VerticalAlignment="Top" Width="105" IsEnabled="False"/>
-        <Button Content="Вийти з системи" HorizontalAlignment="Left" Height="24" Margin="302,381,0,0" VerticalAlignment="Top" Width="135" IsEnabled="False"/>
-        <Button Content="Додати користувача" HorizontalAlignment="Left" Height="24" Margin="302,350,0,0" VerticalAlignment="Top" Width="135" IsEnabled="False"/>
-        <TextBox HorizontalAlignment="Left" Height="28" Margin="302,317,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" FontSize="15" IsEnabled="False"/>
+        <Label x:Name="Restriction" Content="" HorizontalAlignment="Left" Margin="591,270,0,0" VerticalAlignment="Top" FontSize="14" RenderTransformOrigin="0.539,0.59"/>
+        <Button Content="Попередній" HorizontalAlignment="Left" Height="24" Margin="316,273,0,0" VerticalAlignment="Top" Width="105" IsEnabled="False" Click="Button_Click_3"/>
+        <Button Content="Наступний" HorizontalAlignment="Left" Height="24" Margin="637,273,0,0" VerticalAlignment="Top" Width="105" IsEnabled="False" Click="Button_Click_4"/>
+        <Button Content="Вийти з системи" HorizontalAlignment="Left" Height="24" Margin="302,381,0,0" VerticalAlignment="Top" Width="135" IsEnabled="False" Click="Button_Click_5"/>
+        <Button x:Name="Adduser" Content="Додати користувача" HorizontalAlignment="Left" Height="24" Margin="302,350,0,0" VerticalAlignment="Top" Width="135" IsEnabled="False" Click="Adduser_Click"/>
+        <TextBox x:Name="new_log" HorizontalAlignment="Left" Height="28" Margin="302,317,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" FontSize="15" IsEnabled="False"/>
         <Label Content="Користувач" HorizontalAlignment="Left" Margin="499,316,0,0" VerticalAlignment="Top" FontSize="14" IsEnabled="False"/>
-        <ComboBox HorizontalAlignment="Left" Height="28" Margin="627,317,0,0" VerticalAlignment="Top" Width="109" IsEnabled="False"/>
-        <CheckBox Content="Активність" HorizontalAlignment="Left" Margin="499,350,0,0" VerticalAlignment="Top" IsEnabled="False"/>
-        <CheckBox Content="Обмеженя на пароль" HorizontalAlignment="Left" Margin="499,373,0,0" VerticalAlignment="Top" IsEnabled="False"/>
-        <Button Content="Встановити зміни" HorizontalAlignment="Left" Height="23" Margin="557,410,0,0" VerticalAlignment="Top" Width="126" IsEnabled="False"/>
+        <ComboBox x:Name="cb" HorizontalAlignment="Left" Height="28" Margin="627,317,0,0" VerticalAlignment="Top" Width="109" IsEnabled="False" SelectionChanged="cb_SelectionChanged"/>
+        <CheckBox x:Name="act" Content="Активність" HorizontalAlignment="Left" Margin="499,350,0,0" VerticalAlignment="Top" IsEnabled="False"/>
+        <CheckBox x:Name="rest" Content="Обмеженя на пароль" HorizontalAlignment="Left" Margin="499,373,0,0" VerticalAlignment="Top" IsEnabled="False"/>
+        <Button Content="Встановити зміни" HorizontalAlignment="Left" Height="23" Margin="557,410,0,0" VerticalAlignment="Top" Width="126" IsEnabled="False" Click="Button_Click_6"/>
         <Button Content="Перейти до головного меню" HorizontalAlignment="Left" Height="23" Margin="25,5,0,0" VerticalAlignment="Top" Width="177" RenderTransformOrigin="0.723,1.77" Click="Button_Click"/>
+        <PasswordBox x:Name="paradmin" HorizontalAlignment="Left" Height="34" Margin="29,57,0,0" VerticalAlignment="Top" Width="202" FontSize="18"/>
+        <PasswordBox x:Name="old_par" HorizontalAlignment="Left" Height="27" Margin="337,91,0,0" VerticalAlignment="Top" Width="173" FontSize="14" IsEnabled="False"/>
+        <PasswordBox x:Name="new_par1" HorizontalAlignment="Left" Height="27" Margin="557,91,0,0" VerticalAlignment="Top" Width="173" FontSize="14" IsEnabled="False"/>
+        <PasswordBox x:Name="new_par2" HorizontalAlignment="Left" Height="27" Margin="483,137,0,0" VerticalAlignment="Top" Width="173" FontSize="14" IsEnabled="False"/>
 
     </Grid>
 </Window>
