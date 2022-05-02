@@ -17,3 +17,5 @@ C:\Users\Anatoly\OneDrive\Документи\Progr_2s\Rep\Prac3\Prac3\obj\Debug\
 C:\Users\Anatoly\OneDrive\Документи\Progr_2s\Rep\Prac3\Prac3\obj\Debug\Window2.g.cs
 C:\Users\Anatoly\OneDrive\Документи\Progr_2s\Rep\Prac3\Prac3\obj\Debug\Window1.baml
 C:\Users\Anatoly\OneDrive\Документи\Progr_2s\Rep\Prac3\Prac3\obj\Debug\Window2.baml
+C:\Users\Anatoly\OneDrive\Документи\Progr_2s\Rep\Prac3\Prac3\obj\Debug\Info.g.cs
+C:\Users\Anatoly\OneDrive\Документи\Progr_2s\Rep\Prac3\Prac3\obj\Debug\Info.baml

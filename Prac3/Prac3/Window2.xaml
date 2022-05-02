@@ -5,8 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Prac3"
         mc:Ignorable="d"
-        Title="Window2" Height="450" Width="800">
-    <Grid>
-        
+        Title="Режим користувача" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Closed="Window_Closed">
+    <Grid x:Name="Mygrid">
+        <Label Content="АВТОРИЗАЦІЯ КОРИСТУВАЧА" HorizontalAlignment="Left" Margin="33,21,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="15" FontWeight="Bold"/>
+        <Label Content="Логін користувача" HorizontalAlignment="Left" Margin="21,53,0,0" VerticalAlignment="Top" FontSize="13" FontWeight="Bold"/>
+        <Label Content="Пароль користувача" HorizontalAlignment="Left" Margin="19,87,0,0" VerticalAlignment="Top" FontSize="13" FontWeight="Bold"/>
+        <TextBox x:Name="login_tb" HorizontalAlignment="Left" Height="22" Margin="165,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="login_tb_TextChanged"/>
+        <PasswordBox x:Name="pass_b1" HorizontalAlignment="Left" Height="22" Margin="165,92,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Avtorizat" Content="Авторизуватися" HorizontalAlignment="Left" Height="39" Margin="21,134,0,0" VerticalAlignment="Top" Width="128" FontWeight="Bold" Click="Avtorizat_Click"/>
+        <Button x:Name="Exit" Content="Вийти з системи" HorizontalAlignment="Left" Height="39" Margin="183,134,0,0" VerticalAlignment="Top" Width="128" FontWeight="Bold" Click="Exit_Click"/>
+        <Label Content="ЗМІНА ДАНИХ КОРИСТУВАЧА" HorizontalAlignment="Left" Margin="47,191,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="15" FontWeight="Bold"/>
+        <Label Content="Ім'я користувача" HorizontalAlignment="Left" Margin="35,231,0,0" VerticalAlignment="Top" FontSize="13" FontWeight="Bold"/>
+        <Label Content="Прізвище користувача" HorizontalAlignment="Left" Margin="33,265,0,0" VerticalAlignment="Top" FontSize="13" FontWeight="Bold"/>
+        <Label Content="Новий пароль" HorizontalAlignment="Left" Margin="33,297,0,0" VerticalAlignment="Top" FontSize="13" FontWeight="Bold"/>
+        <Label Content="Повторити новий пароль" HorizontalAlignment="Left" Margin="33,329,0,0" VerticalAlignment="Top" FontSize="13" FontWeight="Bold"/>
+        <Button x:Name="Update" Content="Оновити дані" HorizontalAlignment="Left" Height="39" Margin="78,361,0,0" VerticalAlignment="Top" Width="128" FontWeight="Bold" IsEnabled="False" Click="Update_Click"/>
+        <PasswordBox x:Name="pass_bnew" HorizontalAlignment="Left" Height="22" Margin="213,297,0,0" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <PasswordBox x:Name="pass_bnewrep" HorizontalAlignment="Left" Height="22" Margin="213,329,0,0" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <TextBox x:Name="Name_tb" HorizontalAlignment="Left" Height="22" Margin="213,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <Button x:Name="Back_to_menu" Content="Закрити режим користувача" HorizontalAlignment="Left" Height="39" Margin="569,361,0,0" VerticalAlignment="Top" Width="187" FontWeight="Bold" Click="Button_Click"/>
+        <Label Content="РЕЄСТРАЦІЯ НОВОГО КОРИСТУВАЧА" HorizontalAlignment="Left" Margin="467,21,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="15" FontWeight="Bold"/>
+        <TextBox x:Name="Surname_tb" HorizontalAlignment="Left" Height="22" Margin="213,265,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <Label Content="Ім'я користувача" HorizontalAlignment="Left" Margin="469,48,0,0" VerticalAlignment="Top" FontSize="13" FontWeight="Bold"/>
+        <Label Content="Прізвище користувача" HorizontalAlignment="Left" Margin="467,78,0,0" VerticalAlignment="Top" FontSize="13" FontWeight="Bold"/>
+        <Label Content="Пароль користувача" HorizontalAlignment="Left" Margin="467,136,0,0" VerticalAlignment="Top" FontSize="13" FontWeight="Bold"/>
+        <Label Content="Повторити пароль" HorizontalAlignment="Left" Margin="467,166,0,0" VerticalAlignment="Top" FontSize="13" FontWeight="Bold"/>
+        <Label Content="Логін користувача" HorizontalAlignment="Left" Margin="467,108,0,0" VerticalAlignment="Top" FontSize="13" FontWeight="Bold"/>
+        <Button x:Name="Registry" Content="Зареєструватися" HorizontalAlignment="Left" Height="39" Margin="516,209,0,0" VerticalAlignment="Top" Width="187" FontWeight="Bold" Click="Registr_Click"/>
+        <TextBox x:Name="NameRegistr_tb" HorizontalAlignment="Left" Height="22" Margin="636,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <TextBox x:Name="SurnameRegistr_tb" HorizontalAlignment="Left" Height="22" Margin="636,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <TextBox x:Name="login_registr" HorizontalAlignment="Left" Height="22" Margin="636,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <PasswordBox x:Name="passreg" HorizontalAlignment="Left" Height="22" Margin="636,141,0,0" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
+        <PasswordBox x:Name="passreg_Copy" HorizontalAlignment="Left" Height="22" Margin="636,169,0,0" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
     </Grid>
 </Window>

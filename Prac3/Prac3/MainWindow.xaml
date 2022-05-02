@@ -8,8 +8,8 @@
         Title="MainWindow" Height="272.4" Width="725.6" WindowStartupLocation="CenterScreen" WindowStyle="None">
     <Grid Margin="0,0,0.2,-4">
         <Button Content="Режим адміністратора" HorizontalAlignment="Left" Height="79" Margin="10,34,0,0" VerticalAlignment="Top" Width="200" FontFamily="Sitka Text" FontSize="14" Click="Button_Click_1"/>
-        <Button Content="Режим користувача" HorizontalAlignment="Left" Height="79" Margin="248,34,0,0" VerticalAlignment="Top" Width="200" FontFamily="Sitka Text" FontSize="14"/>
-        <Button Content="Про розробника" HorizontalAlignment="Left" Height="79" Margin="499,34,0,0" VerticalAlignment="Top" Width="200" FontFamily="Sitka Text" FontSize="14"/>
+        <Button Content="Режим користувача" HorizontalAlignment="Left" Height="79" Margin="248,34,0,0" VerticalAlignment="Top" Width="200" FontFamily="Sitka Text" FontSize="14" Click="Button_Click_2"/>
+        <Button Content="Про розробника" HorizontalAlignment="Left" Height="79" Margin="499,34,0,0" VerticalAlignment="Top" Width="200" FontFamily="Sitka Text" FontSize="14" Click="Button_Click_3"/>
         <Button Content="Закрити додаток" HorizontalAlignment="Left" Height="45" Margin="204,185,0,0" VerticalAlignment="Top" Width="296" FontFamily="Sitka Text" FontSize="14" Click="Button_Click"/>
     </Grid>
 </Window>

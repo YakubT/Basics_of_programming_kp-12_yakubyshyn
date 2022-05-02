@@ -1,0 +1,14 @@
+﻿<Window x:Class="Prac3.Info"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prac3"
+        mc:Ignorable="d"
+        Title="Info" Height="450" Width="800" WindowStartupLocation="CenterScreen" Closed="Window_Closed">
+    <Grid>
+        <Label Content="Розробник програми : Якубишин Анатолій Сергійович, &#xD;&#xA;група КП-12, ФПМ, КПІ" HorizontalAlignment="Left" Height="211" Margin="10,58,0,0" VerticalAlignment="Top" Width="739" FontSize="26"/>
+        <Button x:Name="Back_to_menu" Content="Перейти до меню" HorizontalAlignment="Left" Height="70" Margin="527,330,0,0" VerticalAlignment="Top" Width="229" FontWeight="Bold" Click="Back_to_menu_Click" FontSize="16"/>
+
+    </Grid>
+</Window>

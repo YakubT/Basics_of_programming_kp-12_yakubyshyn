@@ -39,5 +39,19 @@ namespace Prac3
             nw.Show();
 
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Hide();
+            Window nw = new Window2();
+            nw.Show();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            Hide();
+            Window nw = new Info();
+            nw.Show();
+        }
     }
 }

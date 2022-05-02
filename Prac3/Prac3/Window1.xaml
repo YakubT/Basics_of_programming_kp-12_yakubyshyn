@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Prac3"
         mc:Ignorable="d"
-        Title="Режим адміністратора" Height="473.1" Width="800" WindowStartupLocation="CenterScreen" Closed="adminwind_Closed">
+        Title="Режим адміністратора" Height="473.1" Width="800" WindowStartupLocation="CenterScreen" Closed="adminwind_Closed" ResizeMode="NoResize">
     <Grid x:Name="myGrid">
         <Label Content="Введіть пароль адміністратора" HorizontalAlignment="Left" Margin="25,28,0,0" VerticalAlignment="Top" FontSize="14"/>
         <Button Content="Авторизуватися" HorizontalAlignment="Left" Height="25" Margin="25,105,0,0" VerticalAlignment="Top" Width="206" FontSize="14" Click="Button_Click_1"/>
@@ -29,7 +29,7 @@
         <Label x:Name="Restriction" Content="" HorizontalAlignment="Left" Margin="591,270,0,0" VerticalAlignment="Top" FontSize="14" RenderTransformOrigin="0.539,0.59"/>
         <Button Content="Попередній" HorizontalAlignment="Left" Height="24" Margin="316,273,0,0" VerticalAlignment="Top" Width="105" IsEnabled="False" Click="Button_Click_3"/>
         <Button Content="Наступний" HorizontalAlignment="Left" Height="24" Margin="637,273,0,0" VerticalAlignment="Top" Width="105" IsEnabled="False" Click="Button_Click_4"/>
-        <Button Content="Вийти з системи" HorizontalAlignment="Left" Height="24" Margin="302,381,0,0" VerticalAlignment="Top" Width="135" IsEnabled="False" Click="Button_Click_5"/>
+        <Button Content="Вийти з системи" HorizontalAlignment="Left" Height="24" Margin="302,381,0,0" VerticalAlignment="Top" Width="135" Click="Button_Click_5"/>
         <Button x:Name="Adduser" Content="Додати користувача" HorizontalAlignment="Left" Height="24" Margin="302,350,0,0" VerticalAlignment="Top" Width="135" IsEnabled="False" Click="Adduser_Click"/>
         <TextBox x:Name="new_log" HorizontalAlignment="Left" Height="28" Margin="302,317,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" FontSize="15" IsEnabled="False"/>
         <Label Content="Користувач" HorizontalAlignment="Left" Margin="499,316,0,0" VerticalAlignment="Top" FontSize="14" IsEnabled="False"/>

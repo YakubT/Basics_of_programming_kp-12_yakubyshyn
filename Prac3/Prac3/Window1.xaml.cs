@@ -29,6 +29,7 @@ namespace Prac3
         string SQLQuery;
         int knt_sprob;
         int index_user;
+        bool f = true;
         public Window1()
         {
             InitializeComponent();
@@ -174,7 +175,7 @@ namespace Prac3
                         MessageBox.Show("Новий пароль встановлено");
                     }
                     else
-                        MessageBox.Show("Пароль має містити хоча б одну велику літеру латинського алфавіту," +
+                        MessageBox.Show("Пароль має містити хоча б одну велику літеру латинського алфавіту, " +
                             "хоча б одну маленьку літеру та хоча б одну цифру");
                 }
                 else
@@ -213,11 +214,13 @@ namespace Prac3
             adapter.Fill(Table);
             Dgrid.ItemsSource = Table.DefaultView;
             connection.Close();
-            update_info();
+          
             cb.Items.Clear();
             for (int i = 0; i < Table.Rows.Count; i++)
                 cb.Items.Add(Table.Rows[i][2]);
-            
+            cb.SelectedIndex = index_user;
+            f = true;
+            update_info();
         }
         private void Adduser_Click(object sender, RoutedEventArgs e)
         {
@@ -241,10 +244,13 @@ namespace Prac3
 
         private void cb_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            index_user = cb.SelectedIndex;
-            if (index_user == -1)
-                index_user = 0;
-            update_info();
+            if (f)
+            {
+                index_user = cb.SelectedIndex;
+                if (index_user == -1)
+                    index_user = 0;
+                update_info();
+            }
         }
 
         private void Button_Click_6(object sender, RoutedEventArgs e)
@@ -267,6 +273,7 @@ namespace Prac3
             command = new SqlCommand(SQLQuery, connection);
             command.ExecuteNonQuery();
             connection.Close();
+            f = false;
             updateTable();
         }
     }
