@@ -1,0 +1,15 @@
+﻿<Window x:Class="Lab4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab4"
+        mc:Ignorable="d"
+        Title="Інформаційна система школи" Height="450" Width="800" WindowStartupLocation="CenterScreen" Closed="Window_Closed">
+    <Grid>
+        <Button Content="SQL запити" HorizontalAlignment="Left" Height="57" Margin="519,327,0,0" VerticalAlignment="Top" Width="200" FontSize="16" Background="#FF6CF319" Click="Button_Click"/>
+        <Image HorizontalAlignment="Left" Height="203" Margin="251,0,0,0" VerticalAlignment="Top" Width="279" Source="images.png" Stretch="Fill"/>
+        <Button Content="Звіт про роботу школи" HorizontalAlignment="Left" Height="57" Margin="64,327,0,0" VerticalAlignment="Top" Width="200" FontSize="16" Background="#FFED5500" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
