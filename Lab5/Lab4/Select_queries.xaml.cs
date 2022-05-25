@@ -161,9 +161,9 @@ namespace Lab4
             connection.Open();
             string str = Cb_sub.SelectedItem.ToString();
             //MessageBox.Show(str);
-            if (str == "Основи здоров'я")
+            if (str.Contains("'"))
             {
-                str = "Основи здоров''я";
+                str= str.Replace("'", "''");
             }
             //MessageBox.Show(str);
             string SQLQuery = "SELECT dbo.Teacher.PersonID, dbo.Teacher.Surname, dbo.Teacher.Name, dbo.Teacher.Middle_name FROM dbo.Schedule INNER JOIN " +

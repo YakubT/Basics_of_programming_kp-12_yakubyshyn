@@ -258,19 +258,108 @@ namespace Lab4
                 updateclasses();
            
         }
-
+        int idpup;
         private void Button_Click_6(object sender, RoutedEventArgs e)
         {
             try
             {
-                int id = Convert.ToInt32(tbdel.Text.ToString());
-                
+                int id = int.Parse(tbdel_Copy.Text.ToString());
+                idpup = id;
+                string s = "Select Idclass from Pupil Where PersonID = "+id.ToString();
+                connection = new SqlConnection(connectionstring);
+                connection.Open();
+                command = new SqlCommand(s, connection);
+                adapter = new SqlDataAdapter(command);
+                DataTable classidt = new DataTable();
+                adapter.Fill(classidt);
+                int classid = int.Parse(classidt.Rows[0][0].ToString());
+                connection.Close();
+                connection.Open();
+                s = "SELECT dbo.Subject.IDSubject " +
+                    "FROM     dbo.Class INNER JOIN dbo.Schedule " +
+                    "ON dbo.Class.ID = dbo.Schedule.ID_class INNER JOIN dbo.Subject ON dbo.Schedule.IDSubject = dbo.Subject.IDSubject " +
+                    "WHERE(dbo.Class.ID = " + classid.ToString() + ") GROUP BY dbo.Subject.IDSubject";
+                command = new SqlCommand(s, connection);
+                adapter = new SqlDataAdapter(command);
+                DataTable subj = new DataTable();
+                adapter.Fill(subj);
+                connection.Close();
+                for (int i=0;i<subj.Rows.Count;i++)
+                {
+                    int idsubj = int.Parse(subj.Rows[i][0].ToString());
+                    s = "Insert INTO Mark(PersonID, IDSubject, Mark) Values (" + id.ToString() + ", " + idsubj.ToString() + ", " + "1)";
+                    connection.Open();
+                    try
+                    {
+
+                        command = new SqlCommand(s, connection);
+                        command.ExecuteNonQuery();
+                    }
+                    catch
+                    {
+
+                    }
+                    connection.Close();
+                }
+                s = "SELECT dbo.Subject.NameSubject AS Предмет, dbo.Mark.Mark AS Оцінка " +
+                    "FROM dbo.Mark INNER JOIN " +
+                    "dbo.Pupil ON dbo.Mark.PersonID = dbo.Pupil.PersonID INNER JOIN " +
+                    "dbo.Subject ON dbo.Mark.IDSubject = dbo.Subject.IDSubject " +
+                    "WHERE(dbo.Pupil.PersonID = "+id.ToString()+")";
+                connection.Open();
+                command = new SqlCommand(s, connection);
+                adapter = new SqlDataAdapter(command);
+                DataTable res = new DataTable();
+                adapter.Fill(res);
+                dgmarks.ItemsSource = res.DefaultView;
+                dgmarks.CanUserAddRows = false;
+                connection.Close();
+
             }
             catch
             {
                 MessageBox.Show("Школяра з таким ID не існує");
             }
+            
         }
+
+        private int find_id_Subject(string s)
+        {
+            connection = new SqlConnection(connectionstring);
+            connection.Open();
+            if (s.Contains("'"))
+            {
+                s = s.Replace("'", "''");
+            }
+            string Scom = "SELECT IDSubject FROM Subject WHERE NameSubject = '" + s + "'";
+            command = new SqlCommand(Scom, connection);
+            adapter = new SqlDataAdapter(command);
+            DataTable d = new DataTable();
+            adapter.Fill(d);
+            connection.Close();
+            return int.Parse(d.Rows[0][0].ToString());
+        }
+        
+
+        private void dgmarks_CurrentCellChanged(object sender, EventArgs e)
+        {
+            for (int i = 0; i < dgmarks.Items.Count; i++)
+            {
+                DataRowView row = (DataRowView)dgmarks.Items[i];
+                string subj = row["Предмет"].ToString();
+                int mark = int.Parse(row["Оцінка"].ToString());
+                
+                string s = "Update Mark Set Mark=" + mark.ToString() + " WHERE PersonID = " + idpup.ToString() + " AND IDSubject = " + find_id_Subject(subj).ToString();
+                
+                connection = new SqlConnection(connectionstring);
+                connection.Open();
+                command = new SqlCommand(s, connection);
+                command.ExecuteNonQuery();
+                connection.Close();
+            }
+        }
+
+        
 
         private void superfunc()
         {
