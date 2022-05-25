@@ -1,0 +1,17 @@
+C:\Users\Anatoly\OneDrive\Документи\Progr_2s\Rep\Lab4\Lab4\bin\Debug\Lab4.exe.config
+C:\Users\Anatoly\OneDrive\Документи\Progr_2s\Rep\Lab4\Lab4\bin\Debug\Lab4.exe
+C:\Users\Anatoly\OneDrive\Документи\Progr_2s\Rep\Lab4\Lab4\bin\Debug\Lab4.pdb
+C:\Users\Anatoly\OneDrive\Документи\Progr_2s\Rep\Lab4\Lab4\obj\Debug\Lab4.csproj.AssemblyReference.cache
+C:\Users\Anatoly\OneDrive\Документи\Progr_2s\Rep\Lab4\Lab4\obj\Debug\Select_queries.g.cs
+C:\Users\Anatoly\OneDrive\Документи\Progr_2s\Rep\Lab4\Lab4\obj\Debug\App.g.cs
+C:\Users\Anatoly\OneDrive\Документи\Progr_2s\Rep\Lab4\Lab4\obj\Debug\Lab4_MarkupCompile.cache
+C:\Users\Anatoly\OneDrive\Документи\Progr_2s\Rep\Lab4\Lab4\obj\Debug\Lab4_MarkupCompile.lref
+C:\Users\Anatoly\OneDrive\Документи\Progr_2s\Rep\Lab4\Lab4\obj\Debug\Select_queries.baml
+C:\Users\Anatoly\OneDrive\Документи\Progr_2s\Rep\Lab4\Lab4\obj\Debug\Lab4.g.resources
+C:\Users\Anatoly\OneDrive\Документи\Progr_2s\Rep\Lab4\Lab4\obj\Debug\Lab4.Properties.Resources.resources
+C:\Users\Anatoly\OneDrive\Документи\Progr_2s\Rep\Lab4\Lab4\obj\Debug\Lab4.csproj.GenerateResource.cache
+C:\Users\Anatoly\OneDrive\Документи\Progr_2s\Rep\Lab4\Lab4\obj\Debug\Lab4.csproj.CoreCompileInputs.cache
+C:\Users\Anatoly\OneDrive\Документи\Progr_2s\Rep\Lab4\Lab4\obj\Debug\Lab4.exe
+C:\Users\Anatoly\OneDrive\Документи\Progr_2s\Rep\Lab4\Lab4\obj\Debug\Lab4.pdb
+C:\Users\Anatoly\OneDrive\Документи\Progr_2s\Rep\Lab4\Lab4\obj\Debug\MainWindow.g.cs
+C:\Users\Anatoly\OneDrive\Документи\Progr_2s\Rep\Lab4\Lab4\obj\Debug\MainWindow.baml
