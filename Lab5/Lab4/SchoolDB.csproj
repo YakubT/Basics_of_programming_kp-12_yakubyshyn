@@ -62,6 +62,9 @@
     <Compile Include="Change_data_pupil.xaml.cs">
       <DependentUpon>Change_data_pupil.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Change_teacher.xaml.cs">
+      <DependentUpon>Change_teacher.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Change_window.xaml.cs">
       <DependentUpon>Change_window.xaml</DependentUpon>
     </Compile>
@@ -76,6 +79,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Change_data_pupil.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Change_teacher.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

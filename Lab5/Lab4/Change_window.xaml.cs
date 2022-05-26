@@ -42,5 +42,12 @@ namespace Lab4
             Hide();
             w.Show();
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Change_teacher ct = new Change_teacher();
+            ct.Show();
+            Hide();
+        }
     }
 }

@@ -47,6 +47,7 @@ namespace Lab4
             dgrid.CanUserAddRows = false;
             connection.Close();
             updateclasses();
+  
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -172,6 +173,12 @@ namespace Lab4
                 string adds = tbs.Text.ToString();
                 string addn = tbn.Text.ToString();
                 string addm = tbm.Text.ToString();
+                if (adds.Contains("'"))
+                    adds = adds.Replace("'", "''");
+                if (addn.Contains("'"))
+                    addn = addn.Replace("'", "''");
+                if (addm.Contains("'"))
+                    addm = addm.Replace("'", "''");
                 string cl = cb2.SelectedItem.ToString();
                 int ID = find_ID_class(cl);
                 string s = "INSERT INTO Pupil (Surname, FirstName, MiddleName, Idclass) VALUES ('" + adds + "', '" + addn

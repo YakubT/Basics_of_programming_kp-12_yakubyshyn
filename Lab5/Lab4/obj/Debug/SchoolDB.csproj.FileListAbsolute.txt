@@ -19,3 +19,5 @@ C:\Users\Anatoly\OneDrive\Документи\Progr_2s\Rep\Lab5\Lab4\obj\Debug\La
 C:\Users\Anatoly\OneDrive\Документи\Progr_2s\Rep\Lab5\Lab4\obj\Debug\Lab4.pdb
 C:\Users\Anatoly\OneDrive\Документи\Progr_2s\Rep\Lab5\Lab4\obj\Debug\Change_data_pupil.g.cs
 C:\Users\Anatoly\OneDrive\Документи\Progr_2s\Rep\Lab5\Lab4\obj\Debug\Change_data_pupil.baml
+C:\Users\Anatoly\OneDrive\Документи\Progr_2s\Rep\Lab5\Lab4\obj\Debug\Change_teacher.g.cs
+C:\Users\Anatoly\OneDrive\Документи\Progr_2s\Rep\Lab5\Lab4\obj\Debug\Change_teacher.baml

@@ -1,0 +1,40 @@
+﻿<Window x:Class="Lab4.Change_teacher"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab4"
+        mc:Ignorable="d"
+        Title="Зміна даних вчителів" Height="538.8" Width="987.792" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="#FFFF7575" Closed="Window_Closed">
+    <Grid>
+        <Button Content="Назад" HorizontalAlignment="Left" Height="55" Margin="788,445,0,0" VerticalAlignment="Top" Width="184" FontSize="29" Background="#FF8AF326" FontFamily="Monotype Corsiva" Click="Button_Click"/>
+        <DataGrid x:Name="search_grid" HorizontalAlignment="Left" Height="215" Margin="50,177,0,0" VerticalAlignment="Top" Width="221" FontSize="10"/>
+        <Label Content="Прізвище" HorizontalAlignment="Left" Height="33" Margin="50,53,0,0" VerticalAlignment="Top" Width="95" FontSize="18"/>
+        <TextBox x:Name="Sur" HorizontalAlignment="Left" Height="26" Margin="50,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" FontSize="14"/>
+        <Label Content="Ім'я" HorizontalAlignment="Left" Height="33" Margin="188,53,0,0" VerticalAlignment="Top" Width="95" FontSize="18"/>
+        <TextBox x:Name="Name" HorizontalAlignment="Left" Height="26" Margin="188,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" FontSize="14"/>
+        <TextBox x:Name="Mid" HorizontalAlignment="Left" Height="26" Margin="50,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" FontSize="14"/>
+        <Label Content="По-батькові" HorizontalAlignment="Left" Height="33" Margin="50,117,0,0" VerticalAlignment="Top" Width="115" FontSize="18"/>
+        <Button Content="Видалити з бази" HorizontalAlignment="Left" Height="33" Margin="326,399,0,0" VerticalAlignment="Top" Width="117" Click="Button_Click_2"/>
+        <TextBox x:Name="DeleteId" HorizontalAlignment="Left" Height="21" Margin="326,373,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="105" FontSize="14"/>
+        <Label Content="Введіть ID вчителя" HorizontalAlignment="Left" Height="33" Margin="326,335,0,0" VerticalAlignment="Top" Width="131" FontSize="14"/>
+        <Label Content="Додавання до бази" HorizontalAlignment="Left" Margin="326,88,0,0" VerticalAlignment="Top" FontSize="17" FontFamily="Times New Roman" FontWeight="Bold"/>
+        <Label Content="Прізвище" HorizontalAlignment="Left" Height="33" Margin="326,126,0,0" VerticalAlignment="Top" Width="95" FontSize="18"/>
+        <Label Content="Ім'я" HorizontalAlignment="Left" Height="33" Margin="326,183,0,0" VerticalAlignment="Top" Width="95" FontSize="18"/>
+        <Label Content="По-батькові" HorizontalAlignment="Left" Height="33" Margin="326,242,0,0" VerticalAlignment="Top" Width="115" FontSize="18"/>
+        <TextBox x:Name="Surnadd" HorizontalAlignment="Left" Height="27" Margin="330,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111" FontSize="14"/>
+        <TextBox x:Name="Nameadd" HorizontalAlignment="Left" Height="27" Margin="330,213,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111" FontSize="14"/>
+        <TextBox x:Name="Middname" HorizontalAlignment="Left" Height="27" Margin="330,275,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111" FontSize="14"/>
+        <Button Content="Додати до бази" HorizontalAlignment="Left" Height="33" Margin="330,307,0,0" VerticalAlignment="Top" Width="113" Click="Button_Click_1"/>
+        <Label Content="Класне керівництво" HorizontalAlignment="Left" Margin="545,14,0,0" VerticalAlignment="Top" FontSize="17" FontFamily="Times New Roman" FontWeight="Bold"/>
+        <Button Content="Встановити зміни" HorizontalAlignment="Left" Height="44" Margin="572,233,0,0" VerticalAlignment="Top" Width="134" FontFamily="Times New Roman" FontSize="16" Click="Button_Click_3"/>
+        <DataGrid x:Name="dgbossing" HorizontalAlignment="Left" Height="168" Margin="543,53,0,0" VerticalAlignment="Top" Width="202" ColumnWidth ="*" FontSize="10"/>
+        <ComboBox x:Name="cbcab" HorizontalAlignment="Left" Height="38" Margin="545,335,0,0" VerticalAlignment="Top" Width="94"/>
+        <Label Content="Присвоєння закріпленого кабінету" HorizontalAlignment="Left" Margin="541,279,0,0" VerticalAlignment="Top" FontSize="17" FontFamily="Times New Roman" FontWeight="Bold"/>
+        <Label Content="Кабінет" HorizontalAlignment="Left" Height="33" Margin="545,307,0,0" VerticalAlignment="Top" Width="95" FontSize="15"/>
+        <TextBox x:Name="teach_cab" HorizontalAlignment="Left" Height="33" Margin="706,340,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="113" FontSize="17"/>
+        <Label Content="ID вчителя" HorizontalAlignment="Left" Height="33" Margin="706,308,0,0" VerticalAlignment="Top" Width="95" FontSize="15"/>
+        <Button Content="Встановити" HorizontalAlignment="Left" Height="33" Margin="624,399,0,0" VerticalAlignment="Top" Width="107" FontSize="14" Click="Button_Click_4"/>
+
+    </Grid>
+</Window>
