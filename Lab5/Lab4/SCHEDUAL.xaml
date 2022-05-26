@@ -1,0 +1,34 @@
+﻿<Window x:Class="Lab4.SCHEDUAL"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab4"
+        mc:Ignorable="d"
+        Title="Формування розкладу" Height="555.45" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="#FF6CBBCE" Closed="Window_Closed">
+    <Grid>
+        <Button Content="Відкрити вікно перегляду розкладу" HorizontalAlignment="Left" Height="86" Margin="10,10,0,0" VerticalAlignment="Top" Width="277" FontSize="16" Click="Button_Click_1"/>
+        <Button Content="Назад" HorizontalAlignment="Left" Height="80" Margin="581,408,0,0" VerticalAlignment="Top" Width="190" FontSize="26" Background="#FF1DB735" FontWeight="Bold" FontFamily="Sitka Text" Click="Button_Click"/>
+        <Button Content="Додати зміни" HorizontalAlignment="Left" Height="78" Margin="43,381,0,0" VerticalAlignment="Top" Width="227" Click="Button_Click_2"/>
+        <ComboBox x:Name="lesson_number" HorizontalAlignment="Left" Height="43" Margin="191,153,0,0" VerticalAlignment="Top" Width="96"/>
+        <Label Content="Номер уроку" HorizontalAlignment="Left" Height="31" Margin="191,117,0,0" VerticalAlignment="Top" Width="111"/>
+        <ComboBox x:Name="cbday_of_week" HorizontalAlignment="Left" Height="43" Margin="43,153,0,0" VerticalAlignment="Top" Width="96"/>
+        <Label Content="День тижня" HorizontalAlignment="Left" Height="31" Margin="43,117,0,0" VerticalAlignment="Top" Width="111"/>
+        <ComboBox x:Name="cbclass" HorizontalAlignment="Left" Height="43" Margin="43,228,0,0" VerticalAlignment="Top" Width="96"/>
+        <Label Content="Клас" HorizontalAlignment="Left" Height="31" Margin="43,197,0,0" VerticalAlignment="Top" Width="111"/>
+        <ComboBox x:Name="cab" HorizontalAlignment="Left" Height="43" Margin="191,228,0,0" VerticalAlignment="Top" Width="96"/>
+        <Label Content="Кабінет" HorizontalAlignment="Left" Height="31" Margin="191,201,0,0" VerticalAlignment="Top" Width="111"/>
+        <ComboBox x:Name="subj" HorizontalAlignment="Left" Height="43" Margin="191,305,0,0" VerticalAlignment="Top" Width="96"/>
+        <Label Content="Предмет" HorizontalAlignment="Left" Height="31" Margin="191,276,0,0" VerticalAlignment="Top" Width="111"/>
+        <TextBox x:Name="id_teach" HorizontalAlignment="Left" Height="30" Margin="43,318,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="96" FontSize="16"/>
+        <Label Content="ID Вчителя" HorizontalAlignment="Left" Height="31" Margin="43,282,0,0" VerticalAlignment="Top" Width="111"/>
+        <DataGrid x:Name="teach_grid" HorizontalAlignment="Left" Height="178" Margin="320,153,0,0" VerticalAlignment="Top" Width="177"/>
+        <ComboBox x:Name="lesson_number_Copy" HorizontalAlignment="Left" Height="43" Margin="664,134,0,0" VerticalAlignment="Top" Width="96"/>
+        <Label Content="Номер уроку" HorizontalAlignment="Left" Height="31" Margin="664,98,0,0" VerticalAlignment="Top" Width="111"/>
+        <ComboBox x:Name="cbday_of_week_Copy" HorizontalAlignment="Left" Height="43" Margin="516,134,0,0" VerticalAlignment="Top" Width="96"/>
+        <Label Content="День тижня" HorizontalAlignment="Left" Height="31" Margin="516,98,0,0" VerticalAlignment="Top" Width="111"/>
+        <ComboBox x:Name="cbclass_Copy" HorizontalAlignment="Left" Height="43" Margin="516,209,0,0" VerticalAlignment="Top" Width="96"/>
+        <Label Content="Клас" HorizontalAlignment="Left" Height="31" Margin="516,178,0,0" VerticalAlignment="Top" Width="111"/>
+        <Button Content="Видалити урок з бази" HorizontalAlignment="Left" Height="57" Margin="559,297,0,0" VerticalAlignment="Top" Width="143" Click="Button_Click_3"/>
+    </Grid>
+</Window>

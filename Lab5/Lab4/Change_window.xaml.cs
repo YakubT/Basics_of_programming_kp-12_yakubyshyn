@@ -49,5 +49,12 @@ namespace Lab4
             ct.Show();
             Hide();
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            SCHEDUAL w = new SCHEDUAL();
+            w.Show();
+            Hide();
+        }
     }
 }

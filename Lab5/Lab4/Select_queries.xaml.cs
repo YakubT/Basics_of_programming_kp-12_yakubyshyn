@@ -81,7 +81,21 @@ namespace Lab4
 
         private void Window_Closed(object sender, EventArgs e)
         {
-            Application.Current.Shutdown();
+            int l_WindowCount = 0;
+
+            foreach (Window w in App.Current.Windows)
+            {
+                if (w.IsVisible)
+                l_WindowCount += 1;
+            }
+            if (l_WindowCount==0)
+            {
+                Application.Current.Shutdown();
+            }
+            else
+            {
+                Hide();
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
