@@ -36,15 +36,17 @@ namespace Lab4
             adapter = new SqlDataAdapter(command);
             dt = new DataTable();
             adapter.Fill(dt);
-            search_grid.ItemsSource = dt.DefaultView;
+            
             showTable = new DataTable();
             adapter.Fill(showTable);
             connection.Close();
+            search_grid.ItemsSource = dt.DefaultView;
             Sur.TextChanged += serching_by_params;
             Name.TextChanged += serching_by_params;
             Mid.TextChanged += serching_by_params;
             connection.Close();
             fill_classes();
+            
         }
         private void set_cabs()
         {
@@ -53,12 +55,12 @@ namespace Lab4
             connection.Open();
             command = new SqlCommand(s, connection);
             adapter = new SqlDataAdapter(command);
-            dt = new DataTable();
-            adapter.Fill(dt);
+            DataTable dt2 = new DataTable();
+            adapter.Fill(dt2);
             connection.Close();
             cbcab.Items.Clear();
-            for (int i = 0; i < dt.Rows.Count; i++)
-                cbcab.Items.Add(dt.Rows[i][0]);
+            for (int i = 0; i < dt2.Rows.Count; i++)
+                cbcab.Items.Add(dt2.Rows[i][0]);
             cbcab.SelectedIndex = 0;
 
         }
@@ -97,21 +99,31 @@ namespace Lab4
             surn = Sur.Text.ToString();
             name = Name.Text.ToString();
             mid = Mid.Text.ToString();
-            for (int i = 0; i < dt.Rows.Count; i++)
-            {
-                DataRow r = showTable.NewRow();
-                r[0] = dt.Rows[i][0];
-                r[1] = dt.Rows[i][1];
-                r[2] = dt.Rows[i][2];
-                r[3] = dt.Rows[i][3];
-                if ((restrictS(dt.Rows[i][1].ToString())
-                        && restrictN(dt.Rows[i][2].ToString())) && restrictM(dt.Rows[i][3].ToString()))
-                    showTable.Rows.Add(r);
+          
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                
+                    DataRow r = showTable.NewRow();
+                   
+                    r[0] = dt.Rows[i][0];
+                    //MessageBox.Show(r[0].ToString());
+                    r[1] = dt.Rows[i][1];
+                    //MessageBox.Show(r[1].ToString());
+                    r[2] = dt.Rows[i][2];
+                    //MessageBox.Show(r[2].ToString());
+                    r[3] = dt.Rows[i][3];
 
 
+
+                    ///MessageBox.Show(r[3].ToString());
+                    if ((restrictS(dt.Rows[i][1].ToString())
+                            && restrictN(dt.Rows[i][2].ToString())) && restrictM(dt.Rows[i][3].ToString()))
+                        showTable.Rows.Add(r);
+                }
+                search_grid.ItemsSource = showTable.DefaultView;
             }
-            search_grid.ItemsSource = showTable.DefaultView;
-        }
+           
+        
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {

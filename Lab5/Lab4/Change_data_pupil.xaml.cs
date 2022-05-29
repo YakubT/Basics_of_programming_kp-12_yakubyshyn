@@ -350,19 +350,26 @@ namespace Lab4
 
         private void dgmarks_CurrentCellChanged(object sender, EventArgs e)
         {
-            for (int i = 0; i < dgmarks.Items.Count; i++)
+            try
             {
-                DataRowView row = (DataRowView)dgmarks.Items[i];
-                string subj = row["Предмет"].ToString();
-                int mark = int.Parse(row["Оцінка"].ToString());
-                
-                string s = "Update Mark Set Mark=" + mark.ToString() + " WHERE PersonID = " + idpup.ToString() + " AND IDSubject = " + find_id_Subject(subj).ToString();
-                
-                connection = new SqlConnection(connectionstring);
-                connection.Open();
-                command = new SqlCommand(s, connection);
-                command.ExecuteNonQuery();
-                connection.Close();
+                for (int i = 0; i < dgmarks.Items.Count; i++)
+                {
+                    DataRowView row = (DataRowView)dgmarks.Items[i];
+                    string subj = row["Предмет"].ToString();
+                    int mark = int.Parse(row["Оцінка"].ToString());
+                    string s = "Update Mark Set Mark=" + mark.ToString() + " WHERE PersonID = " + idpup.ToString() + " AND IDSubject = " + find_id_Subject(subj).ToString();
+
+                    connection = new SqlConnection(connectionstring);
+                    connection.Open();
+                    command = new SqlCommand(s, connection);
+                    command.ExecuteNonQuery();
+                    connection.Close();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Оцінки мають бути в діапазоні від 1 до 12");
+
             }
         }
 
