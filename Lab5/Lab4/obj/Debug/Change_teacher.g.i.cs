@@ -140,7 +140,7 @@ namespace Lab4 {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Lab4;component/change_teacher.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SchoolDB;component/change_teacher.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\Change_teacher.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

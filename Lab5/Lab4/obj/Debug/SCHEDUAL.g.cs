@@ -132,7 +132,7 @@ namespace Lab4 {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Lab4;component/schedual.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SchoolDB;component/schedual.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\SCHEDUAL.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

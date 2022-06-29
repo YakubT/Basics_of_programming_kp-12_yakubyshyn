@@ -7,7 +7,7 @@
     <ProjectGuid>{0B87B06B-A752-4DB9-AA6C-BC84FB38C770}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Lab4</RootNamespace>
-    <AssemblyName>Lab4</AssemblyName>
+    <AssemblyName>SchoolDB</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -137,6 +137,17 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="603cfe317df085948079636d5c1fc92b-removebg-preview.png" />
+    <Resource Include="603cfe317df085948079636d5c1fc92b.jpg" />
+    <Resource Include="ee050e46db0ec05d7140a063b781b2ca.png" />
+    <Content Include="Без названия %283%29.jfif" />
+    <Resource Include="1535561386_school.jpg" />
+    <Resource Include="polzovatelskie-razmery-1000x1000-px-%285%29-500x500.jpeg" />
+    <Resource Include="6.jpg" />
+    <Resource Include="d03508c231e6b094e70ea8cba6d34be0.jpg" />
+    <Content Include="images.jfif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

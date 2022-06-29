@@ -164,7 +164,7 @@ namespace Lab4 {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Lab4;component/change_data_pupil.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/SchoolDB;component/change_data_pupil.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\Change_data_pupil.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

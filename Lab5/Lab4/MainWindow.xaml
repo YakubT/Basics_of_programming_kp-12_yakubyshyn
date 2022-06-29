@@ -8,7 +8,7 @@
         Title="Інформаційна система школи" Height="450" Width="800" WindowStartupLocation="CenterScreen" Closed="Window_Closed">
     <Grid>
         <Button Content="Запити на вибірку інформації" HorizontalAlignment="Left" Height="57" Margin="519,327,0,0" VerticalAlignment="Top" Width="232" FontSize="16" Background="#FF6CF319" Click="Button_Click"/>
-        <Image HorizontalAlignment="Left" Height="203" Margin="251,0,0,0" VerticalAlignment="Top" Width="279" Source="images.png" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="267" Margin="225,0,0,0" VerticalAlignment="Top" Width="339" Source="images.png" Stretch="Fill"/>
         <Button Content="Звіт про роботу школи" HorizontalAlignment="Left" Height="57" Margin="58,327,0,0" VerticalAlignment="Top" Width="200" FontSize="16" Background="#FFED5500" Click="Button_Click_1"/>
         <Button x:Name="Change" Content="Запити для зміни даних" HorizontalAlignment="Left" Height="57" Margin="276,327,0,0" VerticalAlignment="Top" Width="232" FontSize="16" Background="#FFF3CD19" Click="Change_Click"/>
 
